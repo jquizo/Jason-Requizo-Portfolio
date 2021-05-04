@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jason Requizo | Portfolio</title>
+    <meta name="description" content="Jason Requizo's portfolio for Web Development">
+    <meta name="keywords" content="html, css, javascript, js, react, web development, web design">
+</head>
+<body>
+    <div class="main-container">
+
+      <nav class="navbar navbar-expand-lg main-navbar ">
+        <a class="navbar-brand" id="logo" href="#">Jason Requizo</a>
+        <button class="navbar-toggler navbar-toggle-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto navbar-links">
+            <a class="nav-item nav-link mr-2" href="#about">About</a>
+            <a class="nav-item nav-link mr-2" href="#skills">Skills</a>
+            <a class="nav-item nav-link mr-2" href="#project-link">Projects</a>
+            <a class="nav-item nav-link mr-2" href="#footer">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+    <!--/.Navbar-->
+  
+      <div class="container col-xxl-8">
+          <div class="row flex-lg-row align-items-center">
+            <div class="col-10 col-sm-8 col-lg-5">
+              <img src="/images/Designer _Isometric.png" class="mx-lg-auto img-fluid main-image pl-3 d-none d-lg-block" loading="lazy">
+            </div>
+            <div class="col-lg-7 pl-4 ">
+              <h2 class="display-5 fw-bold lh-1 mb-1 pt-5 main-title">Jason <br/> Requizo</h2>
+              <p class="lead">Responsive Websites & Web Designs</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start  btn-container" >
+                <a href="#project-link">
+                  <button type="button" class="btn btn-lg py-2 px-3 ml-2 mb-2 me-md-2 action-btn action-btn-1"><i class="fas fa-pencil-alt"></i></i> Projects</button>
+                </a>
+                <a href="#footer">
+                  <button type="button " class="btn btn-lg py-2 px-3 ml-2 action-btn action-btn-2"><i class="fas fa-mobile-alt"></i> Contact me</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of main container -->
+
+      <!-- About -->
+      <div class="container about-container" id="about">
+        <i class="far fa-address-card fa-2x"></i><h1>About</h1>
+        <p>Hello! My name is Jason. I have an interest in Web design and Web development. I am self-&nbsp;taught using resources such as Lynda.com, Youtube, reddit and Stack Overflow.</p>
+
+        <p>I enjoy browsing creative websites and trying to create stylish designs on my own. I am able to create prototypes/designs on tools such as Adobe XD or Figma and then converting them to working websites.</p>
+      </div>
+
+
+      <!-- Skills section -->
+      <div class="container py-5">
+        <h2 class="pb-2 border-bottom font-weight-bold" id="skills"> Skills</h2>
+      </div>
+      <div class="container skills-container">
+        <div class="card-deck">
+          <!-- Card 1 -->
+            <div class="card card-1">
+                <img class="card-img-top img-fluid card-img card-img-1 mx-auto" src="/images/icons/programming.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title border-bottom pb-3">Front-end</h4>
+                    <p class="card-text">
+                      <ul>
+                        <li><img src="/images/icons/html.png" alt="html" class="html5-icon skills-icon"> HTML</li>
+                        <li><img src="/images/icons/css.png" alt="css" class="css-icon skills-icon"> CSS</li>
+                          <ul>
+                            <li><img src="/images/icons/sass.png" alt="sass" class="sass-icon skills-icon"> Sass</li>
+                          </ul>
+                        <li><img src="/images/icons/js.png" alt="javascript" class="js-icon skills-icon"> JavaScript</li>
+                      </ul>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card card-2 ">
+              <img class="card-img-top img-fluid card-img card-img-2 mx-auto" src="/images/frameworks.png" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title border-bottom pb-3">Frameworks</h4>
+                  <p class="card-text">
+                    <ul>
+                      <li><img src="/images/icons/bootstrap.png" alt="bootstrap" class="bootstrap-icon skills-icon"> Bootstrap</li>
+                      <li><img src="/images/icons/react.png" alt="react" class="react-icon skills-icon"> React</li>
+                      <ul>
+                        <li><img src="/images/icons/redux.png" alt="redux" class="redux-icon skills-icon"> Redux</li>
+                      </ul>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <!-- Card 3 -->
+            <div class="card card-3">
+              <img class="card-img-top img-fluid card-img card-img-3 mx-auto" src="/images/coding.png" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title border-bottom pb-3">Back-end languages</h4>
+                  <p class="card-text">
+                    <ul>
+                      <li><img src="/images/icons/php.png" alt="php" class="php-icon skills-icon"> PHP</li>
+                    </ul>
+                    
+                  </p>
+              </div>
+          </div>
+            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 3 on lg--></div>
+            <!-- Card 4 -->
+            <div class="card card-4">
+                <img class="card-img-top img-fluid card-img mx-auto card-img-4" src="/images/tools.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title border-bottom pb-3">Tools & Programs</h4>
+                    <p class="card-text">
+                      <ul>
+                        <li><img src="/images/icons/git.png" alt="git" class="git-icon skills-icon"> Git</li>
+                        <li><img src="/images/icons/github.png" alt="github" class="github-icon skills-icon"> Github</li>
+                        <li><img src="/images/icons/vscode.png" alt="vscode" class="vscode-icon skills-icon"> Visual Studio Code</li>
+                        <li><img src="/images/icons/wordpress.png" alt="wordpress" class="wordpress-icon skills-icon"> Wordpress</li>
+                      </ul>
+
+                    </p>
+                </div>
+            </div>
+            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+            <!-- Card 5 -->
+            <div class="card card-5">
+              <img class="card-img-top img-fluid card-img card-img-5 mx-auto" src="/images/designtool.png" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title border-bottom pb-3">Design tools</h4>
+                  <p class="card-text">
+                    <ul>
+                      <li><img src="/images/icons/adobexd.png" alt="adobeXD" class="adobexd-icon skills-icon"> Adobe XD</li>
+                      <li><img src="/images/icons/figma.png" alt="figma" class="figma-icon skills-icon"> Figma</li>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+            <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
+            <!-- Card 6 -->
+            <div class="card card-6">
+              <img class="card-img-top img-fluid card-img card-img-6 mx-auto" src="/images/learn.png" alt="Card image cap">
+              <div class="card-body">
+                  <h4 class="card-title border-bottom pb-3">Currently learning</h4>
+                  <p class="card-text">
+                    <ul>
+                      <li><img src="/images/icons/node.png" alt="nodejs" class="nodejs-icon skills-icon"> Node.js</li>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+        </div>
+    </div><!-- Skills container end -->
+
+    <!-- Projects section -->
+    <div class="container py-5 project-card-container" id="projects">
+      <h2 class="pt-5 pb-2 border-bottom font-weight-bold" id="project-link">Projects</h2>
+    <div class="row row-cols-3 align-items-stretch py-5">
+
+      <!-- CARD 1 -->
+      <div class="col pb-5">
+        <!-- CARD IMG -->
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-1">
+          <!-- CARD TITLE -->
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3>MERN Stack Shop</h3>
+            <!-- Button trigger modal -->
+            <div class="modal-trigger-container justify-content-center">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal1">
+              More Info <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <!-- Button trigger end -->
+            <div class="project-btn-container">
+              <a href="https://cpuworld.herokuapp.com/" target="_blank">
+                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+              </a>
+              <a href="https://github.com/jquizo/cpuworld" target="_blank">
+                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 1-->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">CPU World</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center font-weight-bold">Technologies used</p>
+              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+                <li class="me-auto pr-1">
+                  <img src="/images/icons/html.png" alt="html" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/css.png" alt="css" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/js.png" alt="js" class="card-icon">
+                </li>
+                <img src="/images/icons/react.png" alt="react" class="card-icon card-icon-react">
+                <li class="me-auto">
+                  <img src="/images/icons/redux.png" alt="redux" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/node.png" alt="nodejs" class="card-icon-react">
+                </li>
+              </ul>
+              <hr />
+              <p>A mock CPU e-commerce website with a shopping cart, checkout system with integrated paypal API and admin panels. Created with the help of tutorials from Brad Traversy using the MERN stack.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- CARD 1 + MODAL END-->
+    
+      <!-- CARD 2 -->
+      <div class="col pb-5">
+        <!-- CARD IMG -->
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-2">
+          <!-- CARD TITLE -->
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3>Portfolio V3</h3>
+            <!-- Button trigger modal -->
+            <div class="modal-trigger-container justify-content-center">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal2">
+              More Info <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <!-- Button trigger end -->
+            <div class="project-btn-container">
+              <a href="https://jquizo.github.io/PortfolioV3/" target="_blank">
+                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+              </a>
+              <a href="https://github.com/jquizo/PortfolioV3" target="_blank">
+                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 2-->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Portfolio V3</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center font-weight-bold">Technologies used</p>
+              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+                <li class="me-auto pr-1">
+                  <img src="/images/icons/html.png" alt="html" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/css.png" alt="css" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/js.png" alt="js" class="card-icon">
+                </li>
+              </ul>
+              <hr />
+              <p>Portfolio made from scratch. Fully responsive. Uses @Include Media library. <a href="https://eduardoboucas.github.io/include-media/" target="_blank">Library link here</a></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- CARD 2 + MODAL END-->
+
+      <!-- CARD 3 -->
+      <div class="col pb-5">
+        <!-- CARD IMG -->
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-3">
+          <!-- CARD TITLE -->
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3>JS Weather App</h3>
+            <!-- Button trigger modal -->
+            <div class="modal-trigger-container justify-content-center">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal3">
+              More Info <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <!-- Button trigger end -->
+            <div class="project-btn-container">
+              <a href="https://jquizo.github.io/JS-weatherapp/" target="_blank">
+                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+              </a>
+              <a href="https://github.com/jquizo/JS-weatherapp" target="_blank">
+                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+              </a> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 3-->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">JS Weather App</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center font-weight-bold">Technologies used</p>
+              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+                <li class="me-auto pr-1">
+                  <img src="/images/icons/html.png" alt="html" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/css.png" alt="css" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/js.png" alt="js" class="card-icon">
+                </li>
+              </ul>
+              <hr />
+              <p class="text-danger mb-1">WARNING - Not responsive. View only on desktop computers.</p>
+              <p>A plain JavaScript weather app. Styled with CSS Grid Layout. </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- CARD 3 + MODAL END-->
+
+    <!-- CARD 4 + MODAL-->
+    <div class="col pb-5">
+      <!-- CARD IMG -->
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-4">
+        <!-- CARD TITLE -->
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3>React Phone Shop</h3>
+          <!-- Button trigger modal -->
+          <div class="modal-trigger-container justify-content-center">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal4">
+            More Info <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <!-- Button trigger end -->
+          <div class="project-btn-container">
+            <a href="https://react-phoneyworld.netlify.app/" target="_blank">
+              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+            </a>
+            <a href="https://github.com/jquizo/React-Phoneshop" target="_blank">
+              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4-->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">React Phone Shop</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center font-weight-bold">Technologies used</p>
+            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+              <li class="me-auto pr-1">
+                <img src="/images/icons/html.png" alt="html" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/css.png" alt="css" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/js.png" alt="js" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/react.png" alt="react" class="card-icon card-icon-react">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/bootstrap.png" alt="bootstrap" class="card-icon card-icon-react">
+              </li>
+            </ul>
+            <hr />
+            <p>A phone shop created using React and Bootstrap 4. Responsive website.
+              Includes product pages and a working cart.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 4 + MODAL END-->
+
+    <!-- CARD 5 + MODAL-->
+    <div class="col pb-5">
+      <!-- CARD IMG -->
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-5">
+        <!-- CARD TITLE -->
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3>Sweet Merchant</h3>
+          <!-- Button trigger modal -->
+          <div class="modal-trigger-container justify-content-center">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal5">
+            More Info <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <!-- Button trigger end -->
+          <div class="project-btn-container">
+            <a href="https://jquizo.github.io/Sweet.Merchant/" target="_blank">
+              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+            </a>
+            <a href="https://github.com/jquizo/Sweet.Merchant" target="_blank">
+              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sweet Merchant</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center font-weight-bold">Technologies used</p>
+            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+              <li class="me-auto pr-1">
+                <img src="/images/icons/html.png" alt="html" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/css.png" alt="css" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/js.png" alt="js" class="card-icon">
+              </li>
+            </ul>
+            <hr />
+            <p>Cake website I made for my sister. Made with plain HTML, CSS and uses a simple lightbox for the gallery.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 5 + MODAL END-->
+
+    <!-- CARD 6 + MODAL-->
+    <div class="col pb-5">
+      <!-- CARD IMG -->
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-6">
+        <!-- CARD TITLE -->
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3>React Portfolio</h3>
+          <!-- Button trigger modal -->
+          <div class="modal-trigger-container justify-content-center">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal6">
+            More Info <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <!-- Button trigger end -->
+          <div class="project-btn-container">
+            <a href="https://jquizo.github.io/portfolio/#/" target="_blank">
+              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+            </a>
+            <a href="https://github.com/jquizo/portfolio" target="_blank">
+              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6-->
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">React Portfolio</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center font-weight-bold">Technologies used</p>
+            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+              <li class="me-auto pr-1">
+                <img src="/images/icons/html.png" alt="html" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/css.png" alt="css" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/js.png" alt="js" class="card-icon">
+              </li>
+              <li class="me-auto">
+                <img src="/images/icons/react.png" alt="react" class="card-icon">
+              </li>
+            </ul>
+            <hr />
+            <p>A portfolio made with React. React was probably not the best choice but I used it as I wanted to learn it.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CARD 6 + MODAL END-->
+
+    </div><!-- CARD CONTAINERS END -->
+    </div><!-- /Projects end -->
+
+
+ <div><!-- Footer -->
+ <footer id="footer" class="bg-dark text-center text-white pt-3">
+ <!-- Grid container -->
+ <div class="container p-4">
+   <!-- Section: Social media -->
+   <section class="mb-4">
+     <!-- Google -->
+     <a class="btn btn-outline-light btn-floating m-1" href="mailto:jason.req@gmail.com" role="button" target="_blank"><i class="fab fa-google"></i>
+    </a>
+     <!-- Linkedin -->
+     <a class="btn btn-outline-light btn-floating m-1" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
+       <i class="fab fa-linkedin-in"></i>
+     </a>
+     <!-- Github -->
+     <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/jquizo" role="button" target="_blank">
+       <i class="fab fa-github"></i>
+      </a>
+   </section>
+   <!-- Section: Social media end -->
+
+   <!-- Section: Text -->
+   <section class="mb-3">
+     <div class="footer-icon-container">
+      <p class="footer-email">
+          <a id="email-icon" class="contact-icon" href="mailto:jason.req@gmail.com" target="_blank">
+          <i class="far fa-envelope fa-lg"></i>
+          </a>
+          <span class="pl-1">jason.req@gmail.com</span>
+      </p>
+      </div>
+   </section>
+   <!-- Section: Text end-->
+
+ </div>
+ <!-- Grid container end-->
+
+ <!-- Copyright -->
+ <div class="text-center p-2 mt-3 footer-copyright">
+    <p class="pt-3">&copy; Website by Jason Requizo
+     <script type="text/javascript">
+       document.write(new Date().getFullYear());
+     </script> 
+    </p>
+ </div>
+
+ </footer>
+ </div><!-- Footer end-->
+
+    
+  
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
