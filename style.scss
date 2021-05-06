@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 $font-family-lato: 'Lato',sans-serif;
-$font-family-segoe: 'Segoe UI'sans-serif;
+$font-family-segoe: 'Segoe UI', sans-serif;
+$font-family-poppins: 'Poppins', sans-serif;
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: $font-family-lato;
+    font-family: $font-family-poppins;
 }
 
 // ---NAVIGATION---
@@ -75,7 +77,6 @@ body {
 }
 
 .main-title {
-    font-family: $font-family-segoe;
     color: rgb(26, 24, 24);
     font-weight: bolder;
 }
