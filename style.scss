@@ -235,12 +235,13 @@ body {
 .project-card-container {
 
     h3 {
-        font-size: 1.6em; 
+        font-family: $font-family-lato;
+        font-size: 1.7em; 
         font-weight: bold; 
         padding: 0.8em; 
         color: #fff;
-        background: rgb(54,0,218);
-        background: linear-gradient(90deg, rgba(54,0,218,1) 0%, rgba(86,1,219,1) 100%);
+        background: rgb(28, 107, 209);
+        background: linear-gradient(90deg, rgb(29, 100, 194) 0%, rgba(70,35,165,1) 100%);
         width: fit-content;
         margin: auto;
         margin-bottom: 0;
@@ -250,9 +251,7 @@ body {
         text-shadow: 0.3px 0.3px #000;
 
         &:hover {
-            background-color: rgba(70, 35, 165,0.9);
             text-decoration: none;
-        
         }
     }
 }
@@ -417,5 +416,6 @@ body {
 }
 
 .footer-copyright {
-    background-color: rgb(70, 35, 165);
+    background: rgb(47,134,248);
+    background: linear-gradient(90deg, rgba(47,134,248,1) 0%, rgba(70,35,165,1) 100%);
 }
