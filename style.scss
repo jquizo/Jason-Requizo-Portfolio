@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 $font-family-lato: 'Lato',sans-serif;
 $font-family-segoe: 'Segoe UI', sans-serif;
 $font-family-poppins: 'Poppins', sans-serif;
+$font-family-bebas: 'Bebas Neue', sans-serif;
 
 html {
     scroll-behavior: smooth;
@@ -78,7 +81,9 @@ body {
 
 .main-title {
     color: rgb(26, 24, 24);
-    font-weight: bolder;
+    color: #000;
+    font-weight: normal;
+    font-size: 3rem;
 }
 
 .lead {
