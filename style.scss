@@ -84,6 +84,7 @@ body {
     color: #000;
     font-weight: normal;
     font-size: 3rem;
+    font-family: $font-family-bebas;
 }
 
 .lead {
@@ -415,9 +416,15 @@ body {
     }
 }
 
+// ANIMATION FOR EMAIL ICON
+@keyframes hover {
+    from {
+        transform: translateY(-8px);
+    }
+}
 .footer-icon-container:hover {
     transition-duration: 0.6s;
-    transform: translateY(-5px);
+    animation: hover 1.5s alternate-reverse infinite;
 }
 
 .footer-copyright {
