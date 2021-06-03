@@ -15,6 +15,27 @@ body {
     font-family: $font-family-poppins;
 }
 
+// SCROLL TO TOP BUTTON FROM W3SCHOOLS
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 2em; /* Place the button at the bottom of the page */
+    right: 2em; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(0, 0, 0, .85); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.5em 0.8em;
+    border-radius: 16px; /* Rounded corners */
+    font-size: 1.2em; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
 // ---NAVIGATION---
 #logo {
     display: inline-block;
@@ -294,37 +315,44 @@ body {
 
 
 // ---PROJECT CARD IMAGES---
+
 .projects-img-1 {
-    background-image: url("/images/projects/project.png");
+    background-image: url("/images/projects/colour-schemes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .projects-img-2 {
-    background-image: url("/images/projects/portfolio-v3.png");
+    background-image: url("/images/projects/project.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .projects-img-3 {
-    background-image: url("/images/projects/js-weather-app.png");
+    background-image: url("/images/projects/portfolio-v3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .projects-img-4 {
-    background-image: url("/images/projects/react-phone-shop.png");
+    background-image: url("/images/projects/js-weather-app.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .projects-img-5 {
-    background-image: url("/images/projects/sweet-merchant.png");
+    background-image: url("/images/projects/react-phone-shop.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .projects-img-6 {
+    background-image: url("/images/projects/sweet-merchant.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects-img-7 {
     background-image: url("/images/projects/react-portfolio.png");
     background-repeat: no-repeat;
     background-size: cover;

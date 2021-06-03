@@ -34,7 +34,11 @@
       </nav>
 
     <!--/.Navbar-->
-  
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
       <div class="container col-xxl-8">
           <div class="row flex-lg-row align-items-center">
             <div class="col-10 col-sm-8 col-lg-5">
@@ -179,10 +183,73 @@
         <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-1">
           <!-- CARD TITLE -->
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3>MERN Stack Shop</h3>
+            <h3>Colour Schemes</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
               <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal1">
+              More Info <i class="fa fa-search"></i>
+              </button>
+            </div>
+            <!-- Button trigger end -->
+            <div class="project-btn-container">
+              <a href="https://colourschemes.netlify.app/" target="_blank">
+                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+              </a>
+              <a href="https://github.com/jquizo/Colour-schemes" target="_blank">
+                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal 1-->
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title font-weight-bold" id="exampleModalLabel">Colour Schemes</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center font-weight-bold">Technologies used</p>
+              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
+                <li class="me-auto pr-1">
+                  <img src="/images/icons/html.png" alt="html" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/css.png" alt="css" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/js.png" alt="js" class="card-icon">
+                </li>
+                <li class="me-auto">
+                  <img src="/images/icons/bootstrap.png" alt="bootstrap" class="card-icon card-icon-react">
+                </li>
+              </ul>
+              <hr />
+              <p>A mock CPU e-commerce website with a shopping cart, checkout system with integrated paypal API and admin panels. Created with the help of tutorials from Brad Traversy using the MERN stack.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- CARD 1 + MODAL END-->
+
+      <!-- CARD 2 -->
+      <div class="col pb-5">
+        <!-- CARD IMG -->
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-2">
+          <!-- CARD TITLE -->
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3>MERN Stack Shop</h3>
+            <!-- Button trigger modal -->
+            <div class="modal-trigger-container justify-content-center">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal2">
               More Info <i class="fa fa-search"></i>
               </button>
             </div>
@@ -198,8 +265,8 @@
           </div>
         </div>
       </div>
-      <!-- Modal 1-->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal 2-->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -240,18 +307,18 @@
           </div>
         </div>
       </div>
-    <!-- CARD 1 + MODAL END-->
+    <!-- CARD 2 + MODAL END-->
     
-      <!-- CARD 2 -->
+      <!-- CARD 3 -->
       <div class="col pb-5">
         <!-- CARD IMG -->
-        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-2">
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-3">
           <!-- CARD TITLE -->
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h3>Portfolio V3</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
-              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal2">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal3">
               More Info <i class="fa fa-search"></i>
               </button>
             </div>
@@ -268,8 +335,8 @@
           </div>
         </div>
       </div>
-      <!-- Modal 2-->
-      <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal 3-->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -300,18 +367,18 @@
           </div>
         </div>
       </div>
-    <!-- CARD 2 + MODAL END-->
+    <!-- CARD 3 + MODAL END-->
 
-      <!-- CARD 3 -->
+      <!-- CARD 4 -->
       <div class="col pb-5">
         <!-- CARD IMG -->
-        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-3">
+        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-4">
           <!-- CARD TITLE -->
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h3>JS Weather App</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
-              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal3">
+              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal4">
               More Info <i class="fa fa-search"></i>
               </button>
             </div>
@@ -328,8 +395,8 @@
           </div>
         </div>
       </div>
-      <!-- Modal 3-->
-      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal 4-->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -361,18 +428,18 @@
           </div>
         </div>
       </div>
-    <!-- CARD 3 + MODAL END-->
+    <!-- CARD 4 + MODAL END-->
 
-    <!-- CARD 4 + MODAL-->
+    <!-- CARD 5 + MODAL-->
     <div class="col pb-5">
       <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-4">
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-5">
         <!-- CARD TITLE -->
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
           <h3>React Phone Shop</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal4">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal5">
             More Info <i class="fa fa-search"></i>
             </button>
           </div>
@@ -388,8 +455,8 @@
         </div>
       </div>
     </div>
-    <!-- Modal 4-->
-    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal 5-->
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -427,18 +494,18 @@
         </div>
       </div>
     </div>
-    <!-- CARD 4 + MODAL END-->
+    <!-- CARD 5 + MODAL END-->
 
-    <!-- CARD 5 + MODAL-->
+    <!-- CARD 6 + MODAL-->
     <div class="col pb-5">
       <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-5">
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-6">
         <!-- CARD TITLE -->
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
           <h3>Sweet Merchant</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal5">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal6">
             More Info <i class="fa fa-search"></i>
             </button>
           </div>
@@ -454,8 +521,8 @@
         </div>
       </div>
     </div>
-    <!-- Modal 5-->
-    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal 6-->
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -486,18 +553,18 @@
         </div>
       </div>
     </div>
-    <!-- CARD 5 + MODAL END-->
+    <!-- CARD 6 + MODAL END-->
 
-    <!-- CARD 6 + MODAL-->
+    <!-- CARD 7 + MODAL-->
     <div class="col pb-5">
       <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-6">
+      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-7">
         <!-- CARD TITLE -->
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
           <h3>React Portfolio</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal6">
+            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal7">
             More Info <i class="fa fa-search"></i>
             </button>
           </div>
@@ -513,8 +580,8 @@
         </div>
       </div>
     </div>
-    <!-- Modal 6-->
-    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal 7-->
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -548,7 +615,7 @@
         </div>
       </div>
     </div>
-    <!-- CARD 6 + MODAL END-->
+    <!-- CARD 7 + MODAL END-->
 
     </div><!-- CARD CONTAINERS END -->
     </div><!-- /Projects end -->
@@ -602,7 +669,7 @@
  </footer>
  </div><!-- Footer end-->
 
-    
+      <script src="index.js"></script>
   
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
