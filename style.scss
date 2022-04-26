@@ -6,13 +6,18 @@ $font-family-lato: 'Lato',sans-serif;
 $font-family-segoe: 'Segoe UI', sans-serif;
 $font-family-poppins: 'Poppins', sans-serif;
 $font-family-bebas: 'Bebas Neue', sans-serif;
+$font-color-grey: #444444;
+
+.grey-font {
+    color: $font-color-grey
+}
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: $font-family-poppins;
+    font-family: $font-family-lato;
 }
 
 // SCROLL TO TOP BUTTON FROM W3SCHOOLS
@@ -37,38 +42,23 @@ body {
   }
 
 // ---NAVIGATION---
-#logo {
-    display: inline-block;
-    padding: 0.6em 1em;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px, rgba(0, 0, 0, 0.5) 1px 1px 1px;
-}
-
-@media only screen and (max-width: 550px) {
-    #logo {
-        font-size: 1.4em;
-    }
-}
-
 .header-ul {
     padding-right: 3em; 
     
 }
-
 .navbar-toggle-btn {
-    background: rgb(111,61,132);
-    background: linear-gradient(90deg, rgba(182,52,238,1) 0%, rgba(111,61,132,1) 100%);
+    background:  #CFBE03;
     margin-left: auto;
-    margin-top: 0.2em;
-    border-radius: 4px;
+    margin-top: 0.4em;
+    padding-top: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 
 .navbar-links {
     a {
     font-family: $font-family-segoe;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #000;
     font-weight: bold;
     text-align:center;
@@ -77,26 +67,33 @@ body {
     &:hover {
         background:rgba(255,255,255, 0.5 );
         transition-duration: 0.6s;
-        transform: translateY(-1px);
+        transform: translateY(-2px);
     }
     }
 }
 
 .main-navbar {
-    padding-top: 0em;
+    padding-top: 0.6em;
     padding-bottom: 0.4em;
 }
-
 // ---NAVIGATION END---
 
 // ---HERO SECTION---
 .main-container {
     height: 100%;
-    background: url('/images/background.png');
+    width: 100%;
+    background: url('/images/yellow-bg.jpg');
     background-size: cover;
     padding-bottom: 10em;
+    padding-top: 0.4em;
+    border-left: 3.5em solid black;
     .main-image {
-        height: 20em;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        // ALLOWS CLICKING OF LINKS BEHIND IMG
+        pointer-events: none;
     }
 }
 
@@ -104,13 +101,13 @@ body {
     color: rgb(26, 24, 24);
     color: #000;
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-family: $font-family-bebas;
 }
 
 .lead {
-    font-size: 1.4em;
-    color: #fff;
+    font-size: 1.5em;
+    color: #000;
 }
 
 .btn-container {
@@ -119,137 +116,98 @@ body {
         border-radius: 24px;
         border: 2px solid black;
         background-color: whitesmoke;
-        background-color: rgba(255,255,255, 0.6 );
         &:hover {
-            background-color: rgba(255,255,255,1 );  
+            background-color: #6c757d; 
         }
-
     }
-
     .action-btn-1 {
         margin-right: 0.5em;
-        
     }
+}
+
+.social-btn {
+    width: 4.6em;
+    margin-bottom: 0.4em;
 }
 
 // ---HERO SECTION END---
 
 // ---ABOUT SECTION START---
-
 .about-container {
+    display: grid;
+    grid-template-columns: minmax(110px, 22%) 1fr;
     width: 100%;
-    height: 85vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 5em;
-    font-size: 1.1em;
-    line-height: 1.8em;
+    height: 65vh;
+    background-size: cover;
+}
+
+.about-content {
+    font-size: 1.18em;
+    line-height: 1.2em;
+}
+
+.about-title {
+    font-weight: bold;
+}
+
+.about-left-box {
+    background-color: #f5f5f5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    p {
-        font-size: 1em;
-    }
+    border-radius: 0 0 18px 0;
 }
 
-// PHONE MEDIA QUERIES
-
-// IPHONE 5 - 5S
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .about-container {
-        font-size: 1em;
-        margin-bottom: 6em;
-    }
-}
-// IPHONE 6 - 8
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    .about-container {
-        font-size: 1.1em;
-        margin-top: 1em;
-        margin-bottom: 1.1em;
-    }
-}
-// IPHONE 6+ - 8+
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .about-container {
-        font-size: 1.2em;
-        margin-bottom: 2em;
-    }
-}
-
-
-// IPAD MEDIA QUERIES
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .about-container {
-        font-size: 1.8em;
-    }
-}
-// IPAD PRO
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .about-container {
-        height: 60vh;
-        font-size: 1.8em;
-        padding-bottom: 0;
-    }
+.about-right-box {
+    background-color: #d3d3d3 ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-left: 3vw;
+    padding-right: 6vw;
+    padding-left: 6vw;
+    border-radius: 0 0 0 18px;
 }
 
 // ---SKILLS SECTION---
+#skills {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
 
 .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 4em;
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
-
-.card {
-    padding-top: 2.2em;
-    padding-bottom: 18px;
-    margin-bottom: 1em !important;
-
-    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.1);
-    transition: 0.3s;
-    &:hover {
-        box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);   
-    }
-
-
-    h4 {
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-    p {
-        color:rgb(77, 77, 77);
-        font-size: 0.9em;
-    }
-}
-
-.card-img {
-    width: 7em;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin: 10px;
-    transition: 0.4s;
-    &:hover {
-        transform: scale(1.1);
-    }
+    padding-left: 8vw;
+    padding-right: 6vw;
 }
 
 .skills-icon {
-    width: 1.1em;
+    width: 1em;
     padding-bottom: 5px;
+}
+
+.skills-heading-style {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+// Creating short border under heading
+.skills-heading-style:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 80%; 
+    padding-top: 2px; 
+    padding-bottom: 8px;
+    border-bottom: 0.9px solid rgb(118,120,130); 
+   /* margin: 0 auto;  Turn on to center border */
 }
 
 // ---PROJECTS SECTION---
@@ -260,15 +218,15 @@ body {
 }
 
 .project-card-container {
-
     h3 {
         font-family: $font-family-lato;
         font-size: 1.7em; 
         font-weight: bold; 
         padding: 0.8em; 
-        color: #fff;
-        background: rgb(28, 107, 209);
-        background: linear-gradient(90deg, rgb(29, 100, 194) 0%, rgba(70,35,165,1) 100%);
+        color: #ffff;
+        background: rgb(118,120,130);
+        background: linear-gradient(90deg, rgba(118,120,130,1) 15%, rgba(91,95,108,1) 88%); 
+        text-shadow: 1px 1px #000 !important;
         width: fit-content;
         margin: auto;
         margin-bottom: 0;
@@ -276,7 +234,6 @@ body {
         border-radius: 4px;
         text-align: center;
         text-shadow: 0.3px 0.3px #000;
-
         &:hover {
             text-decoration: none;
         }
@@ -284,7 +241,7 @@ body {
 }
 
 .project-card-title { 
-    font-size: 1.4em;  
+    font-size: 1.4em; 
     padding: 0.5em; 
     border: 3px solid #000;
     border-radius: 24px;
@@ -295,7 +252,6 @@ body {
     &:hover {
         color: darkcyan;
         text-decoration: none;
-    
     }
 }
 
@@ -309,37 +265,28 @@ body {
     color: #fff;
     background-color: rgb(71, 71, 71);
     width: fit-content;
-
-
 }
-
-
 // ---PROJECT CARD IMAGES---
-
 .projects-img-1 {
     background-image: url("/images/projects/colour-schemes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .projects-img-2 {
     background-image: url("/images/projects/project.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .projects-img-3 {
     background-image: url("/images/projects/portfolio-v3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .projects-img-4 {
     background-image: url("/images/projects/js-weather-app.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .projects-img-5 {
     background-image: url("/images/projects/react-phone-shop.png");
     background-repeat: no-repeat;
@@ -351,7 +298,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .projects-img-7 {
     background-image: url("/images/projects/react-portfolio.png");
     background-repeat: no-repeat;
@@ -365,12 +311,10 @@ body {
     padding: 1em;
     border-radius: 24px;
 }
-
 .card-icon {
     width: 2em;
     padding: 0 1px;
 }
-
 .modal-trigger-container {
     display: flex;
     font-size: 14px;
@@ -408,12 +352,9 @@ body {
 .card-icon-react {
     width: 3em;
 }
-
-
 // ---PROJECTS SECTION END---
 
 // ---FOOTER---
-
 .footer-email {
     font-size: 1.1em;
     font-weight: bold;
@@ -422,7 +363,6 @@ body {
         color:coral;
     }
 }
-    
 #email-icon {
     // color: rgba(255, 255, 255, 0.7);
     // text-decoration: none;
@@ -443,6 +383,101 @@ body {
         color:coral;
     }
 }
+// PHONE MEDIA QUERIES
+
+// IPHONE 5 - 5S
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 0.8em;
+    }
+    .about-left-box{
+        font-size: 1.6em;
+        margin-bottom: -5em;
+        background-color: #fff;
+    }
+    .about-right-box {
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .skills-container {
+        font-size: 0.95em;
+        padding-left: 1vw;
+        .skills-heading-style {
+            font-size: 1.1em;
+        }
+    }
+}
+// IPHONE 6 - 8
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .about-container {
+        font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 1.4em;
+    }
+    .about-title {
+        font-size: 1.2em;
+    }
+    .fa-address-card {
+        font-size: 1.2em;
+    }
+}
+// IPHONE 6+ - 8+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .about-container {
+        font-size: 1.2em;
+        margin-bottom: 2em;
+    }
+}
+
+// IPHONE XR 
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+    .about-title {
+        font-size: 1.4em;
+        
+    }  
+    .about-right-box {
+        font-size: 1.3em;
+    }
+    .skills-container {
+        font-size: 1.2em;
+    }
+}
+
+// IPAD MEDIA QUERIES
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-container {
+        font-size: 1.8em;
+    }
+}
+// IPAD PRO
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .about-container {
+        height: 60vh;
+        font-size: 1.8em;
+        padding-bottom: 0;
+    }
+}
 
 // ANIMATION FOR EMAIL ICON
 @keyframes hover {
@@ -456,6 +491,7 @@ body {
 }
 
 .footer-copyright {
-    background: rgb(47,134,248);
-    background: linear-gradient(90deg, rgba(47,134,248,1) 0%, rgba(70,35,165,1) 100%);
+    background: rgb(248,190,3);
+    background: linear-gradient(90deg, rgba(248,190,3,1) 11%, rgba(207,154,0,1) 79%);
 }
+

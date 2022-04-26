@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,13 +13,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Jason Requizo | Portfolio</title>
     <meta name="description" content="Jason Requizo's portfolio for Web Development">
-    <meta name="keywords" content="html, css, javascript, js, react, web development, web design">
+    <meta name="keywords" content="html, css, javascript, js, JavaScript, web development, web design, WordPress">
 </head>
 <body>
     <div class="main-container">
-
       <nav class="navbar navbar-expand-lg main-navbar ">
-        <a class="navbar-brand" id="logo" href="#">Jason Requizo</a>
         <button class="navbar-toggler navbar-toggle-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" >
           <i class="fas fa-bars"></i>
         </button>
@@ -41,148 +39,127 @@
 
       <div class="container col-xxl-8">
           <div class="row flex-lg-row align-items-center">
-            <div class="col-10 col-sm-8 col-lg-5">
-              <img src="/images/Designer _Isometric.png" class="mx-lg-auto img-fluid main-image pl-3 d-none d-lg-block" loading="lazy">
-            </div>
-            <div class="col-lg-7 pl-4 ">
-              <h2 class="display-5 fw-bold lh-1 mb-1 pt-5 main-title">Jason <br/> Requizo</h2>
-              <p class="lead">Responsive Websites & Web Designs</p>
+            <div class="col-lg-7 pl-5 ">
+              <h2 class="display-5 fw-bold lh-1 mb-1 pt-5 main-title">Jason Requizo</h2>
+              <p class="lead">Web & WordPress Developer </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start  btn-container" >
+                <a href="#skills-link">
+                  <button type="button" class="btn btn-lg py-2 px-3 ml-2 mb-2 me-md-2 action-btn "><i class="fa-solid fa-file-lines"></i> Skills</button>
+                </a>
                 <a href="#project-link">
                   <button type="button" class="btn btn-lg py-2 px-3 ml-2 mb-2 me-md-2 action-btn action-btn-1"><i class="fas fa-pencil-alt"></i></i> Projects</button>
                 </a>
-                <a href="#footer">
-                  <button type="button " class="btn btn-lg py-2 px-3 ml-2 action-btn action-btn-2"><i class="fas fa-mobile-alt"></i> Contact me</button>
+              </div>
+              <div class="container mb-3 pt-3">
+                <!-- Google -->
+                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="mailto:jason.req@gmail.com" role="button" target="_blank"><i class="fab fa-google"></i>
+               </a>
+                <!-- Linkedin -->
+                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
                 </a>
+                <!-- Github -->
+                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="https://github.com/jquizo" role="button" target="_blank">
+                  <i class="fab fa-github"></i>
+                 </a>
               </div>
             </div>
           </div>
         </div>
+        <img src="/images/pencil-img.png" class="mx-lg-auto img-fluid main-image pl-3 d-none d-lg-block rellax" loading="lazy">
       </div> <!-- End of main container -->
 
-      <!-- About -->
-      <div class="container about-container" id="about">
-        <i class="far fa-address-card fa-2x"></i><h1>About</h1>
-        <p>Hello! My name is Jason. I have an interest in Web design and Web development. I am self-&nbsp;taught using resources such as Lynda.com, Youtube, reddit and Stack Overflow.</p>
-
-        <p>I enjoy browsing creative websites and trying to create stylish designs on my own. I am able to create prototypes/designs on tools such as Adobe XD or Figma and then converting them to working websites.</p>
+      <div class="about-container" id="about">
+        <div class="about-left-box">
+          <i class="far fa-address-card fa-2x mb-1"></i>
+          <h3 class="pl-2 about-title" >About</h3>
+        </div>
+        <div class="about-right-box">
+          <p class="about-content">Hello! My name is Jason. I'm a self taught Frontend & WordPress developer. I have an interest in Web design and Web development.
+          <br />
+          <br />
+          I focus on simple, modern & minimalistic designs, using UI design principles and accessibility. I'm able to create prototypes/designs on design tools and converting them to working websites.
+          </p>
+          
+        </div>
       </div>
-
 
       <!-- Skills section -->
-      <div class="container py-5">
-        <h2 class="pb-2 border-bottom font-weight-bold" id="skills"> Skills</h2>
+      <div class="container" id="skills">
+        <h2 class=" py-1 pt-5 border-bottom font-weight-bold" id="skills-link">Skills</h2>
       </div>
-      <div class="container skills-container">
-        <div class="card-deck">
-          <!-- Card 1 -->
-            <div class="card card-1">
-                <img class="card-img-top img-fluid card-img card-img-1 mx-auto" src="/images/icons/programming.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title border-bottom pb-3">Front-end</h4>
-                    <p class="card-text">
-                      <ul>
-                        <li><img src="/images/icons/html.png" alt="html" class="html5-icon skills-icon"> HTML</li>
-                        <li><img src="/images/icons/css.png" alt="css" class="css-icon skills-icon"> CSS</li>
-                          <ul>
-                            <li><img src="/images/icons/sass.png" alt="sass" class="sass-icon skills-icon"> Sass</li>
-                          </ul>
-                        <li><img src="/images/icons/js.png" alt="javascript" class="js-icon skills-icon"> JavaScript</li>
-                      </ul>
-                    </p>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="card card-2 ">
-              <img class="card-img-top img-fluid card-img card-img-2 mx-auto" src="/images/frameworks.png" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title border-bottom pb-3">Frameworks</h4>
-                  <p class="card-text">
-                    <ul>
-                      <li><img src="/images/icons/bootstrap.png" alt="bootstrap" class="bootstrap-icon skills-icon"> Bootstrap</li>
-                      <li><img src="/images/icons/react.png" alt="react" class="react-icon skills-icon"> React</li>
-                      <ul>
-                        <li><img src="/images/icons/redux.png" alt="redux" class="redux-icon skills-icon"> Redux</li>
-                      </ul>
-                    </ul>
-                  </p>
-              </div>
-            </div>
-            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-            <!-- Card 3 -->
-            <div class="card card-3">
-              <img class="card-img-top img-fluid card-img card-img-3 mx-auto" src="/images/coding.png" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title border-bottom pb-3">Back-end languages</h4>
-                  <p class="card-text">
-                    <ul>
-                      <li><img src="/images/icons/php.png" alt="php" class="php-icon skills-icon"> PHP</li>
-                    </ul>
-                    
-                  </p>
-              </div>
-          </div>
-            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 3 on lg--></div>
-            <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
-            <!-- Card 4 -->
-            <div class="card card-4">
-                <img class="card-img-top img-fluid card-img mx-auto card-img-4" src="/images/tools.png" alt="Card image cap">
-                <div class="card-body">
-                    <h4 class="card-title border-bottom pb-3">Tools & Programs</h4>
-                    <p class="card-text">
-                      <ul>
-                        <li><img src="/images/icons/git.png" alt="git" class="git-icon skills-icon"> Git</li>
-                        <li><img src="/images/icons/github.png" alt="github" class="github-icon skills-icon"> Github</li>
-                        <li><img src="/images/icons/vscode.png" alt="vscode" class="vscode-icon skills-icon"> Visual Studio Code</li>
-                        <li><img src="/images/icons/wordpress.png" alt="wordpress" class="wordpress-icon skills-icon"> Wordpress</li>
-                      </ul>
-
-                    </p>
-                </div>
-            </div>
-            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-            <!-- Card 5 -->
-            <div class="card card-5">
-              <img class="card-img-top img-fluid card-img card-img-5 mx-auto" src="/images/designtool.png" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title border-bottom pb-3">Design tools</h4>
-                  <p class="card-text">
-                    <ul>
-                      <li><img src="/images/icons/adobexd.png" alt="adobeXD" class="adobexd-icon skills-icon"> Adobe XD</li>
-                      <li><img src="/images/icons/figma.png" alt="figma" class="figma-icon skills-icon"> Figma</li>
-                    </ul>
-                  </p>
-              </div>
-            </div>
-            
-            <!-- Card 6 -->
-            <div class="card card-6">
-              <img class="card-img-top img-fluid card-img card-img-6 mx-auto" src="/images/learn.png" alt="Card image cap">
-              <div class="card-body">
-                  <h4 class="card-title border-bottom pb-3">Currently learning</h4>
-                  <p class="card-text">
-                    <ul>
-                      <li><img src="/images/icons/node.png" alt="nodejs" class="nodejs-icon skills-icon"> Node.js</li>
-                    </ul>
-                  </p>
-              </div>
-            </div>
+      <div class="skills-container mt-4">
+        <div class="#">
+          <h3 class="ml-3 skills-heading-style">Basics <i class="fa-solid fa-code fa-xs"></i></h3>
+            <ul class="grey-font">
+              <li><img src="/images/icons/html.png" alt="html" class="html5-icon skills-icon"> HTML</li>
+              <li><img src="/images/icons/css.png" alt="css" class="css-icon skills-icon"> CSS</li>
+                <ul>
+                  <li><img src="/images/icons/sass.png" alt="sass" class="sass-icon skills-icon"> Sass</li>
+                </ul>
+              <li><img src="/images/icons/js.png" alt="javascript" class="js-icon skills-icon"> JavaScript</li>
+              <li><img src="/images/icons/php.png" alt="php" class="php-icon skills-icon"> PHP</li>
+              <li><img src="/images/icons/bootstrap.png" alt="bootstrap" class="bootstrap-icon skills-icon"> Bootstrap</li>
+            </ul>
         </div>
-    </div><!-- Skills container end -->
+        <div>
+          <h3 class="ml-3 skills-heading-style">Tools <i class="fa-solid fa-gear fa-xs"></i></i></h3>
+          <ul class="grey-font">
+            <li><img src="/images/icons/git.png" alt="git" class="git-icon skills-icon"> Git</li>
+            <li><img src="/images/icons/github.png" alt="github" class="github-icon skills-icon"> Github</li>
+            <li><img src="/images/icons/vscode.png" alt="vscode" class="vscode-icon skills-icon"> Visual Studio Code</li>
+            <li><i class="fa-brands fa-trello fa-sm"> </i> Trello</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ml-3 skills-heading-style">Design tools <i class="fa-solid fa-image fa-xs"></i></h3>
+          <ul class="grey-font">
+            <li><img src="/images/icons/adobexd.png" alt="adobeXD" class="adobexd-icon skills-icon"> Adobe XD</li>
+            <li><img src="/images/icons/figma.png" alt="figma" class="figma-icon skills-icon"> Figma</li>
+            <li><img src="/images/icons/canva.jpg" alt="canva" class="canva-icon skills-icon"> Canva</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ml-3 skills-heading-style">WordPress <i class="fa-brands fa-wordpress fa-xs"></i></i></h3>
+          <ul class="grey-font">
+            <li><i class="fa-solid fa-code fa-sm"></i> Shortcode</li>
+            <li><i class="fa-solid fa-magnifying-glass-chart"></i> Basic SEO</li>
+            <li><i class="fa-solid fa-table-cells fa-sm"></i> Gutenberg blocks</li>
+            <li><i class="fa-solid fa-plug-circle-check fa-sm"></i> Theme & Plugin installations</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ml-3 skills-heading-style">Plugins <i class="fa-solid fa-plug fa-xs"></i></i></h3>
+          <ul class="grey-font">
+            <li><i class="fa-brands fa-elementor fa-sm"></i> Elementor</li>
+            <li>WPBakery</li>
+            <li>ACF</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="ml-3 skills-heading-style">Basic IT <i class="fa-solid fa-computer fa-xs"></i></h3>
+           <ul class="grey-font">
+             <li><i class="fa-brands fa-microsoft fa-sm"></i> Microsoft Office</li>
+             <li><i class="fa-regular fa-file-excel fa-sm"></i> Excel</li>
+             <li>Outlook</li>
+           </ul>
+        </div>
+      </div>
+      <!-- Skills section END-->
+
 
     <!-- Projects section -->
-    <div class="container py-5 project-card-container" id="projects">
-      <h2 class="pt-5 pb-2 border-bottom font-weight-bold" id="project-link">Projects</h2>
-    <div class="row row-cols-3 align-items-stretch py-5">
+    <div class="container project-card-container" id="projects">
+      <h2 class=" pb-2 border-bottom font-weight-bold" id="project-link">Projects</h2>
+    <div class="row row-cols-3 align-items-stretch mb-4">
 
       <!-- CARD 1 -->
       <div class="col pb-5">
         <!-- CARD IMG -->
         <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-1">
           <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <div class="d-flex flex-column h-100 p-5 pb-3">
             <h3>Colour Schemes</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
@@ -245,7 +222,7 @@
         <!-- CARD IMG -->
         <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-2">
           <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <div class="d-flex flex-column h-100 p-5 pb-3">
             <h3>MERN Stack Shop</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
@@ -314,7 +291,7 @@
         <!-- CARD IMG -->
         <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-3">
           <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <div class="d-flex flex-column h-100 p-5 pb-3">
             <h3>Portfolio V3</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
@@ -374,7 +351,7 @@
         <!-- CARD IMG -->
         <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-4">
           <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <div class="d-flex flex-column h-100 p-5 pb-3">
             <h3>JS Weather App</h3>
             <!-- Button trigger modal -->
             <div class="modal-trigger-container justify-content-center">
@@ -435,7 +412,7 @@
       <!-- CARD IMG -->
       <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-5">
         <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+        <div class="d-flex flex-column h-100 p-5 pb-3">
           <h3>React Phone Shop</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
@@ -501,7 +478,7 @@
       <!-- CARD IMG -->
       <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-6">
         <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+        <div class="d-flex flex-column h-100 p-5 pb-3">
           <h3>Sweet Merchant</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
@@ -560,7 +537,7 @@
       <!-- CARD IMG -->
       <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-7">
         <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+        <div class="d-flex flex-column h-100 p-5 pb-3">
           <h3>React Portfolio</h3>
           <!-- Button trigger modal -->
           <div class="modal-trigger-container justify-content-center">
@@ -658,7 +635,7 @@
  <!-- Grid container end-->
 
  <!-- Copyright -->
- <div class="text-center p-2 mt-3 footer-copyright">
+ <div class="text-center p-2 mt-3 footer-copyright text-dark">
     <p class="pt-3">&copy; Website by Jason Requizo
      <script type="text/javascript">
        document.write(new Date().getFullYear());
@@ -670,10 +647,17 @@
  </div><!-- Footer end-->
 
       <script src="index.js"></script>
-  
+      
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- RELLAXJS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- INIT RELLAX -->
+      <script>
+        let rellax = new Rellax('.rellax')
+      </script>
+      
 </body>
 </html>
