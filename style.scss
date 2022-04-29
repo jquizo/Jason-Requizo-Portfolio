@@ -199,6 +199,10 @@ body {
     font-size: 1.6em;
     font-weight: bold;
 }
+
+.skills-container ul {
+    font-size: 1.1em;
+}
 // Creating short border under heading
 .skills-heading-style:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
