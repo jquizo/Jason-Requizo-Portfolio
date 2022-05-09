@@ -20,6 +20,12 @@ body {
     font-family: $font-family-lato;
 }
 
+// FOR LAZY LOADING BACKGROUND IMAGES DO NOT REMOVE
+.lazy {
+    background-image: none;
+    background-color: #F1F1FA;
+}
+
 // SCROLL TO TOP BUTTON FROM W3SCHOOLS
 #myBtn {
     display: none; /* Hidden by default */
