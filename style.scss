@@ -398,7 +398,7 @@ body {
 
 // IPHONE 5 - 5S
 @media only screen 
-  and (min-device-width: 200px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .about-container {
@@ -407,13 +407,15 @@ body {
         font-size: 0.8em;
     }
     .about-left-box{
-        font-size: 1.6em;
-        margin-bottom: -5em;
+        font-size: 1.3em;
+        margin-bottom: -2.5em;
         background-color: #fff;
+
     }
     .about-right-box {
         margin-left: 0;
-        border-radius: 0;
+        border-radius: 6px;
+        font-size: 0.95em;
     }
     .skills-container {
         font-size: 0.95em;
@@ -430,8 +432,10 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) { 
     .about-container {
         font-size: 1em;
-        margin-top: 1em;
-        margin-bottom: 1.4em;
+        .about-left-box {
+            padding-top: 2em;
+            padding-bottom: 2.2em;
+        }
     }
     .about-title {
         font-size: 1.2em;
