@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 $font-family-lato: 'Lato',sans-serif;
 $font-family-segoe: 'Segoe UI', sans-serif;
 $font-family-poppins: 'Poppins', sans-serif;
 $font-family-bebas: 'Bebas Neue', sans-serif;
+$font-family-inter: 'Inter', sans-serif;
 $font-color-grey: #444444;
 
 .grey-font {
@@ -17,7 +19,7 @@ html {
 }
 
 body {
-    font-family: $font-family-lato;
+    font-family: $font-family-inter;
 }
 
 // FOR LAZY LOADING BACKGROUND IMAGES DO NOT REMOVE
@@ -59,14 +61,15 @@ body {
     padding-top: 5px;
     border-radius: 8px;
     border: 1px solid black;
+    color: #000;
 }
 
 .navbar-links {
     a {
-    font-family: $font-family-segoe;
-    font-size: 1.1em;
+    font-family: $font-family-inter;
+    font-size: 1.15em;
     color: #000;
-    font-weight: bold;
+    font-weight: bolder;
     text-align:center;
     transition: 0.5s;
     
@@ -92,7 +95,7 @@ body {
     background-size: cover;
     padding-bottom: 10em;
     padding-top: 0.4em;
-    border-left: 3.3em solid black;
+    border-left: 3.1em solid black;
     .main-image {
         position: absolute;
         top: 0px;
@@ -144,12 +147,12 @@ body {
     display: grid;
     grid-template-columns: minmax(110px, 22%) 1fr;
     width: 100%;
-    height: 65vh;
+    height: 66vh;
     background-size: cover;
 }
 
 .about-content {
-    font-size: 1.18em;
+    font-size: 1.2em;
     line-height: 1.2em;
 }
 
@@ -230,7 +233,7 @@ body {
 
 .project-card-container {
     h3 {
-        font-family: $font-family-lato;
+        font-family: $font-family-inter;
         font-size: 1.7em; 
         font-weight: bold; 
         padding: 0.8em; 
@@ -407,6 +410,7 @@ body {
         font-size: 0.8em;
     }
     .about-left-box{
+        padding-top: 0.5em;
         font-size: 1.3em;
         margin-bottom: -2.5em;
         background-color: #fff;
@@ -433,8 +437,9 @@ body {
     .about-container {
         font-size: 1em;
         .about-left-box {
+            font-size: 1.6em;
             padding-top: 2em;
-            padding-bottom: 2.2em;
+            padding-bottom: 2em;
         }
     }
     .about-title {
@@ -453,6 +458,15 @@ body {
         font-size: 1.2em;
         margin-bottom: 2em;
     }
+    .about-right-box {
+        padding-top: 1.4em;
+        margin-top: 1.4em;
+        padding-bottom: 1.4em;
+    }
+    #skills-link {
+        margin-top: 1.8em;
+        margin-bottom: 1.1em;
+    }
 }
 
 // IPHONE XR 
@@ -465,13 +479,38 @@ body {
         font-size: 1.4em;
         
     }  
+    .about-left-box{
+        margin-top: 0.8em;
+    }
     .about-right-box {
         font-size: 1.3em;
+        padding-top: 2em;
+        margin-top: 1.4em;
+        padding-bottom: 2em;
+    }
+    #skills-link {
+        margin-top: 1.8em;
+        margin-bottom: 1em;
     }
     .skills-container {
         font-size: 1.2em;
     }
 }
+
+// IPHONE 12, 12 PRO, 13
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        .about-left-box {
+            height: 7vh;
+            display: grid;
+            padding-bottom: 2em;
+            
+        }
+    }
+
 
 // IPAD MEDIA QUERIES
 @media only screen 
