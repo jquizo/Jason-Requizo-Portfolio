@@ -1,601 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Jason Requizo | Portfolio</title>
-    <meta name="description" content="Jason Requizo's portfolio for Web Development">
-    <meta name="keywords" content="html, css, javascript, js, JavaScript, web development, web design, WordPress">
-</head>
-<body>
-    <div class="main-container lazy">
-      <nav class="navbar navbar-expand-lg main-navbar">
-        <button class="navbar-toggler navbar-toggle-btn dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" >
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto navbar-links">
-            <a class="nav-item nav-link mr-2" href="#about">About</a>
-            <a class="nav-item nav-link mr-2" href="#skills">Skills</a>
-            <a class="nav-item nav-link mr-2" href="#project-link">Projects</a>
-            <a class="nav-item nav-link mr-2" href="#footer">Contact</a>
-          </div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="canonical" href="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+    
+         <!-- CSS -->
+         <link rel="stylesheet" href="/css/root.css">
+         <link rel="stylesheet" href="/css/local.css">
+        <!-- FONTAWESOME CDN -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Jason Requizo | Portfolio</title>
+    </head>
+
+    <body>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
         </div>
       </nav>
+    </header>  
 
-    <!--/.Navbar-->
-    <!-- SCROLL TO TOP BUTTON -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+    <main id="main">
 
-      <div class="container col-xxl-8">
-          <div class="row flex-lg-row align-items-center">
-            <div class="col-lg-7 pl-5 pr-4">
-              <h2 class="display-5 fw-bold lh-1 mb-1 pt-5 main-title">Jason Requizo</h2>
-              <p class="lead">Frontend Web & WordPress developer </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start  btn-container" >
-                <a href="#skills-link">
-                  <button type="button" class="btn btn-lg py-2 px-3 ml-2 mb-2 me-md-2 action-btn "><i class="fa-solid fa-file-lines"></i> Skills</button>
-                </a>
-                <a href="#project-link">
-                  <button type="button" class="btn btn-lg py-2 px-3 ml-2 mb-2 me-md-2 action-btn action-btn-1"><i class="fas fa-pencil-alt"></i></i> Projects</button>
-                </a>
-              </div>
-              <div class="container mb-3 pt-3">
-                <!-- Google -->
-                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="mailto:jason.req@gmail.com" role="button" target="_blank"><i class="fab fa-google"></i>
-               </a>
-                <!-- Linkedin -->
-                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <!-- Github -->
-                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="https://github.com/jquizo" role="button" target="_blank">
-                  <i class="fab fa-github"></i>
-                 </a>
-                 <!-- Dribbble -->
-                <a class="btn btn-dark btn-outline-light btn-floating mr-2 social-btn" href="https://dribbble.com/jquiz" role="button" target="_blank">
-                  <i class="fab fa-dribbble"></i>
-                 </a>
-              </div>
+        <!-- ============================================ -->
+        <!--                    HERO                      -->
+        <!-- ============================================ -->
+    
+        <section class="hero">
+          <div class="hero-left-area">
+            <div>
+              <!-- Do not remove DIV, for CSS GRID space -->
             </div>
+            <div class="hero-cta">
+              <h1 class="hero-title">Jason Requizo</h1>
+              <p class="subheading">UI/UX Designer </p>
+              <!-- Google -->
+              <a class="google-btn" href="mailto:jason.req@gmail.com" role="button" target="_blank">
+                <button class="social-btn">
+                <i class="fab fa-google fa-2x"></i>
+                </button>
+              </a>
+              <!-- Linkedin -->
+              <a class="linkedin-btn" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
+                <button class="social-btn">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+                </button>
+              </a>
+              <!-- Github -->
+              <a class="github-btn" href="https://github.com/jquizo" role="button" target="_blank">
+                <button class="social-btn">
+                <i class="fab fa-github fa-2x"></i>
+                </button>
+              </a>
+              <!-- Dribbble-->
+              <a class="dribbble-btn"href="https://dribbble.com/jquiz" role="button" target="_blank">
+                <button class="social-btn">
+                  <i class="fab fa-dribbble fa-2x"></i>
+                </button>
+              </a>
+              <p class="description">
+                Hi! I am a UI/UX designer with basic Frontend web development skills, <br>
+                focusing on simple and responsive designs using UI design principles.
+              </p>
+              <!-- Contact me btn -->
+              <a  href="mailto:jason.req@gmail.com" role="button" target="_blank">
+                <button class="hero-contact-btn">
+                  Contact me
+                </button>
+              </a>
+              
+            </div>
+   
           </div>
-        </div>
-        <img src="/images/pencil-img.png" class="mx-lg-auto img-fluid main-image pl-3 d-none d-sm-block rellax" loading="lazy" decoding="async">
-      </div> <!-- End of main container -->
 
-      <div class="about-container" id="about">
-        <div class="about-left-box">
-          <i class="far fa-address-card fa-2x mb-1"></i>
-          <h3 class="pl-2 about-title" >About</h3>
-        </div>
-        <div class="about-right-box">
-          <p class="about-content">Hello! My name is Jason. I'm a self taught Frontend & WordPress developer. I have an interest in UI/UX Design and Web Development.
-          <br />
-          <br />
-          I focus on simple, modern & minimalistic designs, using UI design principles and accessibility. I'm able to create prototypes/designs on design tools and converting them to working websites.
-          </p>
-          
-        </div>
+      <div class="hero-right-area">
+      <!-- Skills list section -->
+      <div>
+        <!-- Do not remove DIV, for CSS GRID space -->
       </div>
-
-      <!-- Skills section -->
-      <div class="container" id="skills">
-        <h2 class=" py-3 pt-5 border-bottom font-weight-bold" id="skills-link">Skills</h2>
-      </div>
-
-      <div class="skills-container mt-4">
-        <div class="#">
-          <h3 class="ml-3 skills-heading-style">Basics <i class="pl-1 fa-solid fa-code fa-xs"></i></h3>
-            <ul class="grey-font">
+      <div class="skills-container">
+        <div class="basics">
+          <h3 class="skills-heading-style">Basics <i class="fa-solid fa-code fa-xs"></i></h3>
+            <ul>
               <li><img src="/images/icons/html.png" alt="html" class="html5-icon skills-icon" loading="lazy" decoding="async"> HTML</li>
               <li><img src="/images/icons/css.png" alt="css" class="css-icon skills-icon" loading="lazy" decoding="async"> CSS</li>
-                <ul>
-                  <li><img src="/images/icons/sass.png" alt="sass" class="sass-icon skills-icon" loading="lazy" decoding="async"> Sass</li>
-                </ul>
               <li><img src="/images/icons/js.png" alt="javascript" class="js-icon skills-icon" loading="lazy" decoding="async"> JavaScript</li>
-              <li><img src="/images/icons/php.png" alt="php" class="php-icon skills-icon" loading="lazy" decoding="async"> PHP</li>
               <li><img src="/images/icons/bootstrap.png" alt="bootstrap" class="bootstrap-icon skills-icon" loading="lazy" decoding="async"> Bootstrap</li>
             </ul>
         </div>
-        <div>
-          <h3 class="ml-3 skills-heading-style">Tools <i class="pl-1 fa-solid fa-gear fa-xs"></i></i></h3>
-          <ul class="grey-font">
+        <div class="tools">
+          <h3 class="skills-heading-style ">Tools <i class="fa-solid fa-gear fa-xs"></i></i></h3>
+          <ul>
             <li><img src="/images/icons/git.png" alt="git" class="git-icon skills-icon" loading="lazy" decoding="async"> Git</li>
-            <li><img src="/images/icons/github.png" alt="github" class="github-icon skills-icon" loading="lazy" decoding="async"> Github</li>
             <li><img src="/images/icons/vscode.png" alt="vscode" class="vscode-icon skills-icon" loading="lazy" decoding="async"> Visual Studio Code</li>
-            <li><i class="fa-brands fa-trello fa-sm"> </i> Trello</li>
             <li><img src="/images/icons/chatgpt.png" alt="chatgpt" class=" skills-icon" loading="lazy" decoding="async"> ChatGPT</li>
             <li><img src="/images/icons/midjourney.png" alt="midjourney" class=" skills-icon" loading="lazy" decoding="async"> MidJourney</li>
           </ul>
         </div>
-        <div>
-          <h3 class="ml-3 skills-heading-style">Design tools <i class="pl-1 fa-solid fa-image fa-xs"></i></h3>
-          <ul class="grey-font">
+        <div class="design-tools">
+          <h3 class="skills-heading-style">Design tools <i class="fa-solid fa-image fa-xs"></i></h3>
+          <ul>
             <li><img src="/images/icons/adobexd.png" alt="adobeXD" class="adobexd-icon skills-icon" loading="lazy" decoding="async"> Adobe XD</li>
             <li><img src="/images/icons/figma.png" alt="figma" class="figma-icon skills-icon" loading="lazy" decoding="async"> Figma</li>
             <li><img src="/images/icons/canva.jpg" alt="canva" class="canva-icon skills-icon" loading="lazy" decoding="async"> Canva</li>
           </ul>
         </div>
-        <div>
-          <h3 class="ml-3 skills-heading-style">WordPress <i class="pl-1 fa-brands fa-wordpress fa-xs"></i></i></h3>
+        <div class="WordPress">
+          <h3 class="skills-heading-style wordpress">WordPress <i class="pl-1 fa-brands fa-wordpress fa-xs"></i></i></h3>
           <ul class="grey-font">
             <li><i class="fa-solid fa-code fa-sm"></i> Shortcode</li>
             <li><i class="fa-solid fa-magnifying-glass-chart"></i> Basic SEO</li>
             <li><i class="fa-solid fa-table-cells fa-sm"></i> Gutenberg blocks</li>
-            <li><i class="fa-solid fa-plug-circle-check fa-sm"></i> Theme & Plugin installations</li>
           </ul>
         </div>
-        <div>
-          <h3 class="ml-3 skills-heading-style">Plugins <i class="pl-1 fa-solid fa-plug fa-xs"></i></i></h3>
-          <ul class="grey-font">
+        <div class="plugins">
+          <h3 class="skills-heading-style">Plugins <i class="pl-1 fa-solid fa-plug fa-xs"></i></i></h3>
+          <ul>
             <li><i class="fa-brands fa-elementor fa-sm"></i> Elementor</li>
             <li>WPBakery</li>
             <li>ACF</li>
           </ul>
         </div>
         <div>
-          <h3 class="ml-3 skills-heading-style">Basic IT <i class="pl-1 fa-solid fa-computer fa-xs"></i></h3>
-           <ul class="grey-font">
+          <h3 class="skills-heading-style">Basic IT <i class="pl-1 fa-solid fa-computer fa-xs"></i></h3>
+           <ul>
              <li><i class="fa-brands fa-microsoft fa-sm"></i> Microsoft Office</li>
              <li><i class="fa-regular fa-file-excel fa-sm"></i> Excel</li>
              <li>Outlook</li>
            </ul>
         </div>
       </div>
-      <!-- Skills section END-->
+      <!-- Skills list section END-->
+            
+          </div>
+  
+        </section>
 
 
-    <!-- Projects section -->
-    <div class="container project-card-container" id="projects">
-      <h2 class=" pb-2 border-bottom font-weight-bold" id="project-link">Projects</h2>
-    <div class="row row-cols-3 align-items-stretch mb-4">
+        <!-- ============================================ -->
+        <!--                   PROJECTS                   -->
+        <!-- ============================================ -->
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
 
-      <!-- CARD 1 -->
-      <div class="col pb-5">
-        <!-- CARD IMG -->
-        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-1 lazy">
-          <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3">
-            <h3>Colour Schemes</h3>
-            <!-- Button trigger modal -->
-            <div class="modal-trigger-container justify-content-center">
-              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal1">
-              More Info <i class="fa fa-search"></i>
-              </button>
-            </div>
-            <!-- Button trigger end -->
-            <div class="project-btn-container">
-              <a href="https://colourschemes.netlify.app/" target="_blank">
-                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
-              </a>
-              <a href="https://github.com/jquizo/Colour-schemes" target="_blank">
-                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 1-->
-      <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title font-weight-bold" id="exampleModalLabel">Colour Schemes</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p class="text-center font-weight-bold">Technologies used</p>
-              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-                <li class="me-auto pr-1">
-                  <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/bootstrap.png" alt="bootstrap" class="card-icon card-icon-react" loading="lazy" decoding="async">
-                </li>
-              </ul>
-              <hr />
-              <p>A website I made to learn more about Color theory and choosing colours for web designs. Includes example colour schemes.
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- CARD 1 + MODAL END-->
+          <div class="features-area">
 
-    
-      <!-- CARD 3 -->
-      <div class="col pb-5">
-        <!-- CARD IMG -->
-        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-3 lazy">
-          <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3">
-            <h3>Portfolio V3</h3>
-            <!-- Button trigger modal -->
-            <div class="modal-trigger-container justify-content-center">
-              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal3">
-              More Info <i class="fa fa-search"></i>
-              </button>
-            </div>
-            <!-- Button trigger end -->
-            <div class="project-btn-container">
-              <a href="https://jquizo.github.io/PortfolioV3/" target="_blank">
-                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
-              </a>
-              <a href="https://github.com/jquizo/PortfolioV3" target="_blank">
-                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
-              </a>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 3-->
-      <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title font-weight-bold" id="exampleModalLabel">Portfolio V3</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p class="text-center font-weight-bold">Technologies used</p>
-              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-                <li class="me-auto pr-1">
-                  <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-                </li>
-              </ul>
-              <hr />
-              <p>Portfolio made from scratch. Fully responsive. Uses @Include Media library. <a href="https://eduardoboucas.github.io/include-media/" target="_blank">Library link here</a></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- CARD 3 + MODAL END-->
-
-      <!-- CARD 4 -->
-      <div class="col pb-5">
-        <!-- CARD IMG -->
-        <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-4 lazy">
-          <!-- CARD TITLE -->
-          <div class="d-flex flex-column h-100 p-5 pb-3">
-            <h3>JS Weather App</h3>
-            <!-- Button trigger modal -->
-            <div class="modal-trigger-container justify-content-center">
-              <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal4">
-              More Info <i class="fa fa-search"></i>
-              </button>
-            </div>
-            <!-- Button trigger end -->
-            <div class="project-btn-container">
-              <a href="https://jquizo.github.io/JS-weatherapp/" target="_blank">
-                <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
-              </a>
-              <a href="https://github.com/jquizo/JS-weatherapp" target="_blank">
-                <button>View&nbsp;Source <i class="fab fa-github"></i></button>
-              </a> 
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Modal 4-->
-      <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title font-weight-bold" id="exampleModalLabel">JS Weather App</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p class="text-center font-weight-bold">Technologies used</p>
-              <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-                <li class="me-auto pr-1">
-                  <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-                </li>
-                <li class="me-auto">
-                  <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-                </li>
-              </ul>
-              <hr />
-              <p class="text-danger mb-1">WARNING - Not responsive. View only on desktop computers.</p>
-              <p>A plain JavaScript weather app. Styled with CSS Grid Layout. </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- CARD 4 + MODAL END-->
-
-    <!-- CARD 5 + MODAL-->
-    <div class="col pb-5">
-      <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-5 lazy">
-        <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3">
-          <h3>React Phone Shop</h3>
-          <!-- Button trigger modal -->
-          <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal5">
-            More Info <i class="fa fa-search"></i>
-            </button>
-          </div>
-          <!-- Button trigger end -->
-          <div class="project-btn-container">
-            <a href="https://react-phoneyworld.netlify.app/" target="_blank">
-              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+            <a href="https://colourschemes.netlify.app/" class="feature-item" target="_blank">
+              <div class="feature-image-1 feature-image"></div>
+              <div class="feature-title">
+                <h3>Colour Schemes</h3>
+              </div>
+              <div class="feature-description">
+                A website I made to learn more about Color theory and choosing colours for web designs. Includes example colour schemes.
+              </div>
             </a>
-            <a href="https://github.com/jquizo/React-Phoneshop" target="_blank">
-              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+
+            <a href="https://react-phoneyworld.netlify.app/" class="feature-item" target="_blank">
+              <div class="feature-image-2 feature-image"></div>
+              <div class="feature-title">
+                <h3>React Phone Shop</h3>
+              </div>
+              <div class="feature-description">
+                A phone shop created using React and Bootstrap 4. Responsive website. Includes product pages and a working cart.
+              </div>
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 5-->
-    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">React Phone Shop</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="text-center font-weight-bold">Technologies used</p>
-            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-              <li class="me-auto pr-1">
-                <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/react.png" alt="react" class="card-icon card-icon-react" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/bootstrap.png" alt="bootstrap" class="card-icon card-icon-react" loading="lazy" decoding="async">
-              </li>
-            </ul>
-            <hr />
-            <p>A phone shop created using React and Bootstrap 4. Responsive website.
-              Includes product pages and a working cart.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 5 + MODAL END-->
 
-    <!-- CARD 6 + MODAL-->
-    <div class="col pb-5">
-      <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-6 lazy">
-        <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3">
-          <h3>Sweet Merchant</h3>
-          <!-- Button trigger modal -->
-          <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal6">
-            More Info <i class="fa fa-search"></i>
-            </button>
-          </div>
-          <!-- Button trigger end -->
-          <div class="project-btn-container">
-            <a href="https://jquizo.github.io/Sweet.Merchant/" target="_blank">
-              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
+            <a href="https://jquizo.github.io/PortfolioV3/" class="feature-item" target="_blank">
+              <div class="feature-image-3 feature-image"></div>
+              <div class="feature-title">
+                <h3>Portfolio V3</h3>
+              </div>
+              <div class="feature-description">
+                Portfolio made from scratch. Fully responsive. Uses @Include Media library.
+              </div>
             </a>
-            <a href="https://github.com/jquizo/Sweet.Merchant" target="_blank">
-              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
+
+            <a href="https://jquizo.github.io/Sweet.Merchant/" class="feature-item" target="_blank">
+              <div class="feature-image-4 feature-image"></div>
+              <div class="feature-title">
+                <h3>Sweet Merchant</h3>
+              </div>
+              <div class="feature-description">
+                Cake website I made for my sister. Made with plain HTML, CSS and uses a simple lightbox for the gallery.
+              </div>
             </a>
+          
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 6-->
-    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title font-weight-bold" id="exampleModalLabel">Sweet Merchant</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+        </section>
+
+        <footer class="footer">
+
+          <!-- Google -->
+          <a class="google-btn" href="mailto:jason.req@gmail.com" role="button" target="_blank">
+            <button class="social-btn">
+            <i class="fab fa-google fa-2x"></i>
             </button>
-          </div>
-          <div class="modal-body">
-            <p class="text-center font-weight-bold">Technologies used</p>
-            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-              <li class="me-auto pr-1">
-                <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-              </li>
-            </ul>
-            <hr />
-            <p>Cake website I made for my sister. Made with plain HTML, CSS and uses a simple lightbox for the gallery.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 6 + MODAL END-->
-
-    <!-- CARD 7 + MODAL-->
-    <div class="col pb-5">
-      <!-- CARD IMG -->
-      <div class="card card-cover h-100 overflow-hidden shadow-lg projects-img projects-img-7 lazy">
-        <!-- CARD TITLE -->
-        <div class="d-flex flex-column h-100 p-5 pb-3">
-          <h3>React Portfolio</h3>
-          <!-- Button trigger modal -->
-          <div class="modal-trigger-container justify-content-center">
-            <button type="button" class="btn mt-5 mb-4 display-6" data-toggle="modal" data-target="#modal7">
-            More Info <i class="fa fa-search"></i>
-            </button>
-          </div>
-          <!-- Button trigger end -->
-          <div class="project-btn-container">
-            <a href="https://jquizo.github.io/portfolio/#/" target="_blank">
-              <button class="mr-2">View&nbsp;Project <i class="fas fa-eye"></i></button>
-            </a>
-            <a href="https://github.com/jquizo/portfolio" target="_blank">
-              <button>View&nbsp;Source <i class="fab fa-github"></i></button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal 7-->
-    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title font-weight-bold" id="exampleModalLabel">React Portfolio</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p class="text-center font-weight-bold">Technologies used</p>
-            <ul class="d-flex list-unstyled mt-auto  justify-content-center">
-              <li class="me-auto pr-1">
-                <img src="/images/icons/html.png" alt="html" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/css.png" alt="css" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/js.png" alt="js" class="card-icon" loading="lazy" decoding="async">
-              </li>
-              <li class="me-auto">
-                <img src="/images/icons/react.png" alt="react" class="card-icon" loading="lazy" decoding="async">
-              </li>
-            </ul>
-            <hr />
-            <p>A portfolio made with React. React was probably not the best choice but I used it as I wanted to learn it.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 7 + MODAL END-->
-
-    </div><!-- CARD CONTAINERS END -->
-    </div><!-- /Projects end -->
-
-
- <div><!-- Footer -->
- <footer id="footer" class="bg-dark text-center text-white pt-3">
- <!-- Grid container -->
- <div class="container p-4">
-   <!-- Section: Social media -->
-   <section class="mb-4">
-     <!-- Google -->
-     <a class="btn btn-outline-light btn-floating m-1" href="mailto:jason.req@gmail.com" role="button" target="_blank"><i class="fab fa-google"></i>
-    </a>
-     <!-- Linkedin -->
-     <a class="btn btn-outline-light btn-floating m-1" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
-       <i class="fab fa-linkedin-in"></i>
-     </a>
-     <!-- Github -->
-     <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/jquizo" role="button" target="_blank">
-       <i class="fab fa-github"></i>
-      </a>
-   </section>
-   <!-- Section: Social media end -->
-
-   <!-- Section: Text -->
-   <section class="mb-3">
-     <div class="footer-icon-container">
-      <p class="footer-email">
-          <a id="email-icon" class="contact-icon" href="mailto:jason.req@gmail.com" target="_blank">
-          <i class="far fa-envelope fa-lg"></i>
           </a>
-          <span class="pl-1">jason.req@gmail.com</span>
-      </p>
-      </div>
-   </section>
-   <!-- Section: Text end-->
+          <!-- Linkedin -->
+          <a class="linkedin-btn" href="https://au.linkedin.com/in/jason-requizo-b362a8124" role="button" target="_blank">
+            <button class="social-btn">
+            <i class="fab fa-linkedin-in fa-2x"></i>
+            </button>
+          </a>
+          <!-- Github -->
+          <a class="github-btn" href="https://github.com/jquizo" role="button" target="_blank">
+            <button class="social-btn">
+            <i class="fab fa-github fa-2x"></i>
+            </button>
+          </a>
+          <!-- Dribbble-->
+          <a class="dribbble-btn"href="https://dribbble.com/jquiz" role="button" target="_blank">
+            <button class="social-btn">
+              <i class="fab fa-dribbble fa-2x"></i>
+            </button>
+          </a>
+  
+           <!-- Copyright -->
+          <div class="text-center p-2 mt-3 footer-copyright text-dark">
+            <p class="pt-3">&copy; Website by Jason Requizo
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> 
+             </p>
+          </div>
 
- </div>
- <!-- Grid container end-->
+          
 
- <!-- Copyright -->
- <div class="text-center p-2 mt-3 footer-copyright text-dark">
-    <p class="pt-3">&copy; Website by Jason Requizo
-     <script type="text/javascript">
-       document.write(new Date().getFullYear());
-     </script> 
-    </p>
- </div>
+        </footer>
 
- </footer>
- </div><!-- Footer end-->
+  </div><!-- Footer end-->
+        
+    </main>
 
-      <script src="index.js"></script>
-      
+    <script>
+        var ba = ["MSIE","Trident","Edge"];
+        var b, ua = navigator.userAgent;
+        for(var i=0; i < ba.length; i++){
+            if( ua.indexOf(ba[i]) > -1 ){
+                b = ba[i];
+                break;
+            }
+        }
+        if(b == "MSIE" || b == "Trident" || b == "Edge"){
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <!-- RELLAXJS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <!-- INIT RELLAX -->
-      <script>
-        let rellax = new Rellax('.rellax')
-      </script>
-      
-</body>
+    <script defer src="/app.js"></script>
+
+    </body>
+
 </html>

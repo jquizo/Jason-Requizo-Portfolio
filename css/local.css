@@ -1,0 +1,303 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+main {
+  width: 100%;
+  height: 100vh;
+  min-height: 50em;
+}
+
+/*-- -------------------------- -->
+<---          Hero              -->
+<--- -------------------------- -*/
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 85vh;
+  border-top: 0.5px solid rgb(87, 87, 87);
+}
+.hero a {
+  text-decoration: none;
+}
+.hero a :hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+}
+.hero a:visited {
+  color: inherit;
+}
+.hero .hero-left-area {
+  display: grid;
+  padding: 1.4em;
+  padding-bottom: 3em;
+  order: -1;
+  background: rgb(231, 170, 9);
+  background: linear-gradient(90deg, rgb(231, 170, 9) 0%, rgb(249, 190, 34) 100%);
+}
+.hero .hero-left-area .hero-cta {
+  padding-left: 2.5em;
+  padding-top: 2em;
+}
+.hero .hero-left-area .hero-cta h1 {
+  font-size: 3.6em;
+  font-weight: bold;
+}
+.hero .hero-left-area .hero-cta .subheading {
+  color: #262626;
+  margin-top: 0.3em;
+  font-size: 1.6em;
+  padding-bottom: 0.4em;
+}
+.hero .hero-left-area .hero-cta .description {
+  font-size: 1.2em;
+  padding-top: 0.6em;
+  padding-bottom: 0.8em;
+  line-height: 1.6em;
+}
+.hero .hero-left-area .hero-cta .social-btn {
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 0.8em;
+  margin-right: 0.6em;
+  border: 0.5px solid black;
+}
+.hero .hero-left-area .hero-cta .google-btn :hover {
+  background: #4285F4;
+}
+.hero .hero-left-area .hero-cta .linkedin-btn :hover {
+  background: #0072b1;
+}
+.hero .hero-left-area .hero-cta .github-btn :hover {
+  background: #24292F;
+}
+.hero .hero-left-area .hero-cta .dribbble-btn :hover {
+  background: #EA4C89;
+}
+.hero .hero-left-area .hero-cta .hero-contact-btn {
+  font-size: 1em;
+  padding: 0.8em;
+  margin-bottom: 0.1em;
+  font-weight: bolder;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: whitesmoke;
+}
+.hero .hero-left-area .hero-cta .hero-contact-btn:hover {
+  background-color: #6c757d;
+  color: #fff;
+}
+.hero .hero-right-area {
+  display: grid;
+  padding-top: 2.5em;
+  padding-bottom: 0.8em;
+}
+.hero .hero-right-area p {
+  margin-bottom: 2em;
+}
+.hero .hero-right-area .skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 4em;
+  padding-left: 9vw;
+  padding-right: 4vw;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.hero .hero-right-area .skills-container h3 {
+  padding-bottom: 0.5em;
+  font-size: 1.3em;
+}
+.hero .hero-right-area .skills-container ul {
+  color: #4b4b4b;
+  list-style-type: circle;
+}
+.hero .hero-right-area .skills-icon {
+  width: 0.8em;
+}
+.hero .hero-right-area .skills-heading-style {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.hero .hero-right-area .skills-container ul {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.hero .hero-right-area .skills-heading-style:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  width: 75%;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  border-bottom: 0.9px solid rgb(118, 120, 130);
+  /* margin: 0 auto;  Turn on to center border */
+}
+
+/*-- -------------------------- -->
+<---         Projects           -->
+<--- -------------------------- -*/
+.projects {
+  padding-top: 0.8em;
+  padding-bottom: 2.5em;
+  margin-bottom: 1em;
+}
+.projects .skills-icon {
+  width: 0.8em;
+  margin-right: 0.3em;
+}
+.projects ul {
+  list-style-type: circle;
+}
+.projects h2 {
+  font-size: 2.6em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  margin-left: 0.4em;
+}
+.projects h3 {
+  font-size: 1.5em;
+  margin-top: 0.6em;
+  margin-bottom: 0.4em;
+}
+.projects h4 {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.projects .features-area {
+  display: grid;
+}
+.projects .feature-title {
+  padding-top: 0.4em;
+}
+.projects .feature-item {
+  text-decoration: none;
+  margin: 0.9em;
+  margin-bottom: 0.6em;
+  padding: 1.4em 0.8em 0.6em 0.8em;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  background-color: rgba(240, 240, 240, 0.5);
+  display: grid;
+  justify-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 150ms ease-in-out;
+}
+.projects .feature-item:hover {
+  transform: scale(1.03);
+}
+.projects .feature-item:visited {
+  color: #000;
+}
+.projects .feature-image {
+  border-radius: 0.4rem;
+}
+.projects .feature-image-1 {
+  background-image: url("/images/projects/colour-schemes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 11em;
+  height: 11em;
+}
+.projects .feature-image-2 {
+  background-image: url("/images/projects/react-phone-shop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 11em;
+  height: 11em;
+}
+.projects .feature-image-3 {
+  background-image: url("/images/projects/portfolio-v3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 11em;
+  height: 11em;
+}
+.projects .feature-image-4 {
+  background-image: url("/images/projects/sweet-merchant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 11em;
+  height: 11em;
+}
+.projects .feature-description {
+  color: #1f1f1f;
+  text-align: center;
+  max-width: 18em;
+  padding-bottom: 1.2em;
+}
+
+/*-- -------------------------- -->
+<---       Media queries        -->
+<--- -------------------------- -*/
+@media (min-width: 51em) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero .hero-right-area {
+    order: 2;
+  }
+}
+@media screen and (min-width: 0px) {
+  .services-area {
+    grid-template-columns: 1fr;
+  }
+  .features-area {
+    grid-template-columns: 1fr;
+  }
+}
+/* Ipad Pro */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+  .services-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Tablets */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+  .services-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Small Desktop */
+@media screen and (min-width: 1024px) {
+  .services-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .features-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Regular Desktop */
+@media only screen and (min-width: 2000px) {
+  .services-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .features-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Large Desktop */
+@media only screen and (min-device-width: 300px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .basics,
+  .tools,
+  .design-tools,
+  .wordpress {
+    padding-bottom: 0.8em;
+  }
+  .hero .description {
+    max-width: 14em;
+  }
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-min-device-pixel-ratio: 2) {
+  .hero .description {
+    max-width: 13em;
+  }
+}/*# sourceMappingURL=local.css.map */

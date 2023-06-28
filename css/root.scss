@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$mainColor: #124CB8;
+$secondaryColor: #1864C4;
+$HoverColor: #1313bc;
+$dark: #121212;
+$medium: #333;
+$light: #3c3c3c;
+
+// Mobile viewport onwards
+@media screen and (min-width: 0px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    * {
+		-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+        
+        ::before {
+            -webkit-box-sizing: border-box;
+				box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+        }
+        ::after {
+            -webkit-box-sizing: border-box;
+				box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+        }
+	}
+
+	html {
+		scroll-behavior: smooth;
+	  }
+
+    .section {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    body, html, p{
+		font-family: "Montserrat", sans-serif;
+        
+	}
+
+    p {
+        font-weight: 500;
+    }
+
+    a:hover {
+		cursor: pointer;
+	}
+
+    h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		line-height: 1em;
+	}
+
+    .container {
+        padding: 0 0.5em;
+
+	}
+}
+
+/*-- -------------------------- -->
+<---         NAVIGATION         -->
+<--- -------------------------- -*/
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000;
+    font-size: 1.1em;
+
+}
+
+.brand-title {
+    margin: 0.6em;
+}
+
+.navbar-links {
+    
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.3em;
+    margin-right: 1em;
+    margin-bottom: 0.4em;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        &:hover {
+            background-color: #F6BD02;
+            
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            padding: 1em;
+            transition: 0.4s;
+            
+            &:hover {
+                transform: scale(1.05);
+                color: #000;
+            }
+        }
+    }
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.5em;
+    height: 1.1em;
+
+    .bar {
+        height: 0.2em;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 0.5px solid black;
+    }
+}
+
+// Navbar Signup & Login Buttons
+.btn {
+    color: white !important;
+    display: inline-block;
+    background-color: $secondaryColor;
+    border-radius: 12px;
+    padding: 0.5em !important;
+    margin: 0.4em !important;
+    text-decoration: none;
+    transition: 0.4s;   
+    &:hover {
+        background-color: $HoverColor;
+    }
+    &:visited {
+    color: inherit;
+    }
+}
+
+// Show navbar toggle button under 600px view
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .toggle-button {
+            display: flex;
+        }
+
+        .navbar-links {
+            display: none;
+            width: 100%;
+
+            ul {
+                width: 100%;
+                flex-direction: column;
+
+                li {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/*-- -------------------------- -->
+<---         Footer             -->
+<--- -------------------------- -*/
+.footer {
+    background: #000;
+    color: white;
+    padding: 1.2em;
+    padding-top: 3em;
+    text-align: center;
+    font-size: 1em;
+
+    a {
+        text-decoration: none;
+    }
+    .social-btn {
+        font-weight: bold;
+        border-radius: 12px;
+        padding: 0.8em;
+        margin-right: 0.6em;
+        margin-bottom: 1.2em;
+        border: 0.5px solid black;
+        i:hover {
+            transform: scale(1.1);
+        }
+    }
+    .google-btn {
+        :hover {
+            background: #4285F4;
+        }
+    }
+    .linkedin-btn {
+        :hover {
+            background: #0072b1;
+        }
+    }
+    .github-btn {
+        :hover {
+            background: #24292F;
+        }
+    }
+    .dribbble-btn {
+        :hover {
+            background: #EA4C89;
+        }
+    }
+
+}
+
+/*-- -------------------------- -->
+<---         MEDIA QUERIES      -->
+<--- -------------------------- -*/
+
+@media screen and (min-width: 0px) { 
+ 
+}
+
+/* Ipad Pro */
+@media screen and (min-width: 450px) and (max-width: 991px) { 
+
+}
+
+/* Tablets */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+
+}
+
+/* Small Desktop */
+@media screen and (min-width: 1024px) {
+}
+
+/* Regular Desktop */
+
+@media only screen and (min-width: 2000px) {
+    body {
+        font-size: 1vw;
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 2000px) {
+    body {
+        font-size: 1vw;
+    }
+}
+

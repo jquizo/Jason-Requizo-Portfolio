@@ -1,0 +1,390 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+
+$mainColor: rgba(235,176,21,1);
+$hoverColor: rgba(237,185,18,1);
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    min-height: 50em;
+}
+
+/*-- -------------------------- -->
+<---          Hero              -->
+<--- -------------------------- -*/
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 85vh;
+    border-top: 0.5px solid rgb(87, 87, 87);
+    a {
+        text-decoration: none;
+        :hover {
+            transform: scale(1.05);
+            transition:0.2s ease-in;
+            
+        }
+        &:visited {
+            color: inherit;
+        }
+    }
+ 
+    .hero-left-area {
+        display: grid; 
+        padding: 1.4em;
+        padding-bottom: 3em;
+        order: -1;
+        background: rgb(231,170,9);
+        background: linear-gradient(90deg, rgba(231,170,9,1) 0%, rgba(249,190,34,1) 100%);
+
+        .hero-cta {
+            padding-left: 2.5em;
+            padding-top: 2em;
+
+            h1 {
+                font-size: 3.6em;
+                font-weight: bold;
+            } 
+            .subheading {
+                color: #262626;
+                margin-top: 0.3em;
+                font-size: 1.6em;
+                padding-bottom: 0.4em;
+            }
+            .description{
+                font-size: 1.2em;
+                padding-top: 0.6em;
+                padding-bottom: 0.8em;
+                line-height: 1.6em;
+         
+            }
+            
+            .social-btn {
+                font-weight: bold;
+                border-radius: 2px;
+                padding: 0.8em;
+                margin-right: 0.6em;
+                border: 0.5px solid black;
+            }
+            .google-btn {
+                :hover {
+                    background:#4285F4;
+                }
+            }
+            .linkedin-btn {
+                :hover {
+                    background: #0072b1;
+                }
+            }
+            .github-btn {
+                :hover {
+                    background: #24292F;
+                }
+            }
+            .dribbble-btn {
+                :hover {
+                    background: #EA4C89;
+                }
+            }
+
+
+            .hero-contact-btn {
+                font-size: 1em;
+                padding: 0.8em;
+                margin-bottom: 0.1em;
+                font-weight: bolder;
+                border-radius: 12px;
+                border: 2px solid black;
+                background-color: whitesmoke;
+                &:hover {
+                    background-color: #6c757d; 
+                    color: #fff;
+                }
+                
+            }
+            
+        }
+
+        }
+
+        .hero-right-area {  
+            display: grid;  
+            padding-top: 2.5em;
+            padding-bottom: 0.8em;
+            
+            p {
+                margin-bottom: 2em;
+            }
+        
+        // ---SKILLS SECTION---
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: 4em;
+            padding-left: 9vw;
+            padding-right: 4vw;
+            font-size: 0.9em;
+            line-height: 1.8em;
+            
+            h3 {
+
+                padding-bottom: 0.5em;
+                font-size: 1.3em;
+            }
+
+            ul {
+                color: #4b4b4b;
+                list-style-type: circle;
+            }
+        }
+
+        .skills-icon {
+            width: 0.8em;
+       
+        }
+
+        .skills-heading-style {
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        .skills-container ul {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        // Creating short border under heading
+        .skills-heading-style:after {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            width: 75%; 
+            padding-top: 2px; 
+            padding-bottom: 6px;
+            border-bottom: 0.9px solid rgb(118,120,130); 
+        /* margin: 0 auto;  Turn on to center border */
+        }
+        }
+}
+
+
+/*-- -------------------------- -->
+<---         Projects           -->
+<--- -------------------------- -*/
+.projects {
+    padding-top: 0.8em;
+    padding-bottom: 2.5em;
+    margin-bottom: 1em;
+    .skills-icon {
+    width: 0.8em;
+    margin-right: 0.3em;
+    }
+    ul {
+        list-style-type: circle;
+    }
+
+    h2 {
+        font-size: 2.6em;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+        margin-left: 0.4em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-top: 0.6em;
+        margin-bottom: 0.4em;
+    }
+
+    h4 {
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    
+
+    .features-area {
+        display: grid;
+        
+    }
+
+    .feature-title {
+        padding-top: 0.4em;
+    }
+    .feature-item {
+        text-decoration: none;
+        margin: 0.9em;
+        margin-bottom: 0.6em;
+        padding: 1.4em 0.8em 0.6em 0.8em;
+        
+        border-radius: 0.4rem;
+        overflow: hidden;
+        background-color: rgba(240, 240, 240,0.5);
+        display: grid;
+        justify-items: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        transition: all 150ms ease-in-out;
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+        &:visited {
+            color: #000;
+        }
+    }
+    .feature-image {
+        border-radius: 0.4rem;
+    }
+    .feature-image-1 {
+        background-image: url('/images/projects/colour-schemes.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:11em;
+        height:11em;
+    }
+    .feature-image-2 {
+        background-image: url('/images/projects/react-phone-shop.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:11em;
+        height:11em;
+    }
+    .feature-image-3 {
+        background-image: url('/images/projects/portfolio-v3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:11em;
+        height:11em;
+    }
+    .feature-image-4 {
+        background-image: url('/images/projects/sweet-merchant.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width:11em;
+        height:11em;
+    }
+    .feature-description {
+        color:#1f1f1f;
+        text-align: center;
+        max-width: 18em;
+        padding-bottom: 1.2em;
+    }
+}
+
+
+
+
+/*-- -------------------------- -->
+<---       Media queries        -->
+<--- -------------------------- -*/
+
+
+// 2 COLUMN LANDING ON DESKTOP VIEW
+@media (min-width: 51em) {
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        .hero-right-area {
+            order: 2;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 0px)  {
+    .services-area {
+        grid-template-columns: 1fr;
+    }
+    .features-area {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Ipad Pro */
+@media screen and (min-width: 450px) and (max-width: 991px) { 
+
+    .services-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+    .services-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Desktop */
+@media screen and (min-width: 1024px) {
+
+    .services-area {
+        grid-template-columns:repeat(4, 1fr);
+    }
+    .features-area {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Regular Desktop */
+@media only screen and (min-width: 2000px) {
+    .services-area {
+        grid-template-columns:repeat(4, 1fr);
+    }
+    .features-area {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 2000px) {
+
+}
+
+
+// IPHONE 5 - 5S
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .basics,
+    .tools,
+    .design-tools,
+    .wordpress         {
+        padding-bottom: 0.8em;
+    }
+
+    .hero {
+
+        .description {
+            max-width: 14em;
+        }
+    }
+}
+
+
+// SAMSUNG S8+
+@media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 740px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero {
+
+        .description {
+            max-width: 13em;
+        }
+    }
+}
