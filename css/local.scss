@@ -25,7 +25,7 @@ main {
     min-height: 85vh;
     border-top: 0.5px solid rgb(87, 87, 87);
     a {
-        text-decoration: none;
+        text-decoration: none !important;
         :hover {
             transform: scale(1.05);
             transition:0.2s ease-in;
@@ -41,8 +41,8 @@ main {
         padding: 1.4em;
         padding-bottom: 3em;
         order: -1;
-        background: rgb(231,170,9);
-        background: linear-gradient(90deg, rgba(231,170,9,1) 0%, rgba(249,190,34,1) 100%);
+        background: rgb(255,183,76);
+        background: linear-gradient(90deg, rgba(255,183,76,1) 0%, rgba(254,202,67,1) 100%);
 
         .hero-cta {
             padding-left: 2.5em;
@@ -50,13 +50,13 @@ main {
 
             a {
                 text-decoration: none;
-                color: #000;
+                color: #000 !important;
             }
             h1 {
-                font-size: 3.5em;
+                font-size: 3.2em;
                 font-weight: bold;
                 font-family: "Bebas Neue", sans-serif;
-                letter-spacing: 1.6px;
+                letter-spacing: 1.7px;
             } 
             .subheading {
                 color: #262626;
@@ -80,21 +80,25 @@ main {
                 border: 0.5px solid black;
             }
             .google-btn {
+            color: #000;
                 :hover {
                     background:#4285F4;
                 }
             }
             .linkedin-btn {
+            color: #000;
                 :hover {
                     background: #0072b1;
                 }
             }
             .github-btn {
+            color: #000;
                 :hover {
                     background: #24292F;
                 }
             }
             .dribbble-btn {
+            color: #000;
                 :hover {
                     background: #EA4C89;
                 }
