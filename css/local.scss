@@ -22,17 +22,13 @@ main {
 .hero {
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 85vh;
+    min-height: 87vh;
     border-top: 0.5px solid rgb(87, 87, 87);
     a {
-        text-decoration: none !important;
         :hover {
             transform: scale(1.05);
             transition:0.2s ease-in;
             
-        }
-        &:visited {
-            color: #000;
         }
     }
  
@@ -41,8 +37,8 @@ main {
         padding: 1.4em;
         padding-bottom: 3em;
         order: -1;
-        background: rgb(255,183,76);
-        background: linear-gradient(90deg, rgba(255,183,76,1) 0%, rgba(254,202,67,1) 100%);
+        background: rgb(231,170,9);
+        background: linear-gradient(90deg, rgba(231,170,9,1) 0%, rgba(249,190,34,1) 100%);
 
         .hero-cta {
             padding-left: 2.5em;
@@ -50,7 +46,6 @@ main {
 
             a {
                 text-decoration: none;
-                color: #000 !important;
             }
             h1 {
                 font-size: 3.2em;
@@ -71,7 +66,7 @@ main {
                 line-height: 1.6em;
          
             }
-            
+
             .social-btn {
                 font-weight: bold;
                 border-radius: 2px;
@@ -80,30 +75,41 @@ main {
                 border: 0.5px solid black;
             }
             .google-btn {
-            color: #000;
+          
                 :hover {
                     background:#4285F4;
                 }
+
             }
             .linkedin-btn {
-            color: #000;
+            
                 :hover {
                     background: #0072b1;
                 }
+
             }
             .github-btn {
-            color: #000;
+            
                 :hover {
                     background: #24292F;
                 }
+
             }
             .dribbble-btn {
-            color: #000;
+            
                 :hover {
                     background: #EA4C89;
                 }
+
             }
 
+            .contact-link {
+            color: #000;
+                &:hover {
+                    background-color: #6c757d; 
+                    color: #fff;
+                }
+            }
 
             .hero-contact-btn {
                 font-size: 1em;
