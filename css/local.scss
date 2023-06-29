@@ -104,14 +104,18 @@ main {
             }
 
             .contact-link {
-            color: #000;
+            color: #000 !important;
                 &:hover {
                     background-color: #6c757d; 
                     color: #fff;
                 }
+                &:visited {
+                    color: #000 !important;
+                }
             }
 
             .hero-contact-btn {
+                color: #000 !important;
                 font-size: 1em;
                 padding: 0.8em;
                 margin-bottom: 0.1em;
