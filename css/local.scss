@@ -28,7 +28,6 @@ main {
         :hover {
             transform: scale(1.05);
             transition:0.2s ease-in;
-            
         }
     }
  
@@ -57,7 +56,7 @@ main {
                 color: #262626;
                 margin-top: 0.3em;
                 font-size: 1.6em;
-                padding-bottom: 0.4em;
+                padding-bottom: 0.5em;
             }
             .description{
                 font-size: 1.2em;
@@ -70,37 +69,26 @@ main {
             .social-btn {
                 color: #000 !important;
                 font-weight: bold;
-                border-radius: 2px;
+                border-radius: 4px;
                 padding: 0.8em;
-                margin-right: 0.6em;
-                border: 0.5px solid black;
+                margin-right: 0.7em;
+                border: 1px solid rgb(62, 62, 62);
             }
-            .google-btn {
-          
-                :hover {
-                    background:#4285F4;
-                }
 
+            .google-btn {
+                background-color:#4d8ff8;
+                &:hover {
+                    
+                }
             }
             .linkedin-btn {
-            
-                :hover {
-                    background: #0072b1;
-                }
-
+                background-color:#0072b1;
             }
             .github-btn {
-            
-                :hover {
-                    background: #24292F;
-                }
-
+                background-color: #566271;
             }
             .dribbble-btn {
-            
-                :hover {
-                    background: #EA4C89;
-                }
+                background-color:#EA4C89;
 
             }
 
