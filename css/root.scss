@@ -142,18 +142,11 @@ $light: #3c3c3c;
 .btn {
     color: white !important;
     display: inline-block;
-    background-color: $secondaryColor;
     border-radius: 12px;
     padding: 0.5em !important;
     margin: 0.4em !important;
     text-decoration: none;
     transition: 0.4s;   
-    &:hover {
-        background-color: $HoverColor;
-    }
-    &:visited {
-    color: inherit;
-    }
 }
 
 // Show navbar toggle button under 600px view
@@ -219,20 +212,32 @@ $light: #3c3c3c;
         :hover {
             background: #4285F4;
         }
+        &:visited {
+            color: #000;
+        }
     }
     .linkedin-btn {
         :hover {
             background: #0072b1;
+        }
+        &:visited {
+            color: #000;
         }
     }
     .github-btn {
         :hover {
             background: #24292F;
         }
+        &:visited {
+            color: #000;
+        }
     }
     .dribbble-btn {
         :hover {
             background: #EA4C89;
+        }
+        &:visited {
+            color: #000;
         }
     }
 
