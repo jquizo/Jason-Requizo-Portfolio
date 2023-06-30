@@ -74,7 +74,8 @@ $light: #3c3c3c;
 .navbar {
     display: flex;
     justify-content: flex-end;
-    background-color: #000;
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(17,17,17,1) 100%);
     font-size: 1.1em;
     height: 2.5em;
 
