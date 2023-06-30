@@ -40,7 +40,7 @@ main {
         padding-bottom: 3em;
         order: -1;
         background: rgb(231,170,9);
-        background: linear-gradient(90deg, rgba(231,170,9,1) 0%, rgba(249,190,34,1) 100%);
+        background: linear-gradient(90deg, rgba(231,170,9,1) 0%, rgba(255,202,108,1) 100%);
 
         .hero-cta {
             padding-left: 2.5em;
@@ -62,12 +62,11 @@ main {
                 font-size: 1.6em;
                 padding-bottom: 0.5em;
             }
-            .description{
+            .description {
                 font-size: 1.2em;
                 padding-top: 0.6em;
                 padding-bottom: 0.8em;
                 line-height: 1.6em;
-         
             }
 
             .social-btn {
@@ -367,7 +366,7 @@ main {
 
 /* Large Desktop */
 @media only screen and (min-width: 2000px) {
-
+  
 }
 
 
@@ -386,6 +385,7 @@ main {
     .hero {
 
         .description {
+            padding-right: 1em;
             max-width: 14em;
         }
 
@@ -393,6 +393,18 @@ main {
             margin-bottom: 0.6em;
         }
     }
+}
+
+// IPHONE XR 
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+        .description {
+            padding-right: 0.5em;
+            max-width: 20em;
+        }
 }
 
 
