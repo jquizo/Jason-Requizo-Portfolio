@@ -403,6 +403,18 @@ main {
     }
 }
 
+
+
+// IPHONE SE
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .br-media-query span {
+        white-space:nowrap;
+    }   
+}
+
 // IPHONE XR 
 /* 1792x828px at 326ppi */
 @media only screen 
