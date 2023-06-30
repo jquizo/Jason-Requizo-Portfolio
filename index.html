@@ -40,7 +40,7 @@
               <!-- Do not remove DIV, for CSS GRID space -->
             </div>
             <div class="hero-cta">
-              <h1 class="hero-title">Jason Requizo</h1>
+              <h1 class="hero-title" id="name-title">Jason. Requizo</h1>
               <p class="subheading">UI/UX Designer </p>
               <!-- Google -->
               <a class="link-google" href="mailto:jason.req@gmail.com" role="button" target="_blank">
@@ -253,6 +253,20 @@
             b = "Internet Explorer";
             alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
         }
+    </script>
+    
+    <!-- MAIN TITLE ANIMATION SCRIPTS -->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+      const titleAnimation = new SplitType('#name-title')
+      gsap.to('.char', {
+        y:0,
+        stagger: 0.05,
+        delay:0.2,
+        duration: 0.1
+      })
     </script>
 
     <script defer src="/app.js"></script>

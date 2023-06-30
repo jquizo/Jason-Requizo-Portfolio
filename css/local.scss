@@ -23,7 +23,7 @@ main {
 .hero {
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 87vh;
+    min-height: 90vh;
     border-top: 0.5px solid rgb(87, 87, 87);
     a {
         
@@ -55,7 +55,15 @@ main {
                 font-weight: bold;
                 font-family: "Bebas Neue", sans-serif;
                 letter-spacing: 1.7px;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             } 
+
+            // ANIMATION FOR TITLE
+            .char {
+                transform: translateY(-115px);
+                transition: transform 0.4s;
+            }
+                        
             .subheading {
                 color: #262626;
                 margin-top: 0.3em;

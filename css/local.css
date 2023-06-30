@@ -15,7 +15,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  min-height: 87vh;
+  min-height: 90vh;
   border-top: 0.5px solid rgb(87, 87, 87);
 }
 .hero a :hover {
@@ -43,6 +43,12 @@ main {
   font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1.7px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.hero .hero-left-area .hero-cta .char {
+  transform: translateY(-115px);
+  transition: transform 0.4s;
 }
 .hero .hero-left-area .hero-cta .subheading {
   color: #262626;
