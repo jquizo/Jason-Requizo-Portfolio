@@ -84,22 +84,37 @@ main {
                 border-radius: 4px;
                 padding: 0.9em;
                 border: 1px solid rgb(62, 62, 62);
-                
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             .google-btn {
                 background-color:#4d8ff8;
                 
+                &:hover {
+                  background-color:#70a2f2;
+                  
+                }
             }
             .linkedin-btn {
                 background-color:#0072b1;
+
+                &:hover {
+                    background-color:#2087be;
+                }
             }
             .github-btn {
                 background-color: #566271;
+                &:hover {
+                    background-color: #6b7076;
+                }
             }
             .dribbble-btn {
                 background-color:#EA4C89;
-
+                &:hover {
+                    background-color: #eb6296;
+                }   
             }
 
             .contact-link {
@@ -107,6 +122,7 @@ main {
                 &:hover {
                     background-color: #6c757d; 
                     color: #fff;
+                    
                 }
                 &:visited {
                     color: #000 !important;
@@ -125,6 +141,7 @@ main {
                 &:hover {
                     background-color: #6c757d; 
                     color: #fff;
+                    cursor: pointer;
                 }
                 
             }
