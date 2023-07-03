@@ -71,9 +71,10 @@ main {
                 padding-bottom: 0.5em;
             }
             .description {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 padding-top: 0.6em;
                 padding-bottom: 0.8em;
+                padding-right: 0.6em;
                 line-height: 1.6em;
             }
 
@@ -413,6 +414,11 @@ main {
     .br-media-query span {
         white-space:nowrap;
     }   
+    .hero-left-area {
+        h1 {
+            font-size: 2.8em !important;
+        }
+    }
 }
 
 // IPHONE XR 
@@ -422,8 +428,8 @@ main {
     and (device-height : 896px) 
     and (-webkit-device-pixel-ratio : 2) { 
         .description {
-            padding-right: 0.5em;
-            max-width: 20em;
+            font-size: 1.4em !important;
+            
         }
 }
 
@@ -453,3 +459,4 @@ and (orientation : landscape) {
         padding-bottom: 0.8em;
     }
 }
+
