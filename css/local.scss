@@ -76,6 +76,7 @@ main {
                 padding-bottom: 0.8em;
                 padding-right: 0.6em;
                 line-height: 1.6em;
+                text-wrap:balance;
             }
 
             .social-btn {
@@ -450,18 +451,19 @@ main {
         }
 }
 
+// IPHONE 6/7/8 PLUS
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px) {
+
+}
 
 // SAMSUNG S8+
 @media only screen 
   and (min-device-width: 360px) 
   and (max-device-width: 740px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .hero {
 
-        .description {
-            max-width: 13em;
-        }
-    }
 }
 
 // IPAD 9th gen 
