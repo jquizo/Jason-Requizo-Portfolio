@@ -18,8 +18,6 @@ main {
 /*-- -------------------------- -->
 <---          Hero              -->
 <--- -------------------------- -*/
-
-
 .hero {
     display: grid;
     grid-template-columns: 1fr;
@@ -96,7 +94,7 @@ main {
 
             .google-btn {
                 background-color:#4d8ff8;
-                
+
                 &:hover {
                   background-color:#70a2f2;
                   
@@ -117,10 +115,13 @@ main {
             }
             .dribbble-btn {
                 background-color:#EA4C89;
+
                 &:hover {
                     background-color: #eb6296;
                 }   
             }
+
+
 
             .contact-link {
             
@@ -352,6 +353,7 @@ main {
     }
 
 }
+
 
 /* Ipad Pro */
 @media screen and (min-width: 450px) and (max-width: 991px) { 
