@@ -131,6 +131,15 @@
       z-index: 1;
       /* Prevents white rectangle pseudos from overlapping the sections below */
       overflow: hidden;
+      /* Adds rectangle background in hero */
+      background-color: white;
+      background-image: linear-gradient(
+          to right,
+          #8080800a 1px,
+          transparent 1px
+        ),
+        linear-gradient(to bottom, #8080800a 1px, transparent 1px);
+      background-size: 14px 24px;
     }
     #hero-143:before {
       /* Left side of the triangle */
@@ -300,6 +309,7 @@
       background-position: center;
       background-repeat: no-repeat; */
       /* makes the parallax effect */
+
       background-attachment: fixed;
     }
     #hero-143 .cs-background img {
