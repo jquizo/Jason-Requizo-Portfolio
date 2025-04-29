@@ -1,0 +1,208 @@
+---
+
+---
+
+<section id="h-services-143">
+  <ul class="cs-card-group">
+    <li class="cs-item">
+      <picture class="cs-icon">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://img.icons8.com/?size=100&id=24756&format=png&color=000000"
+          alt="icon"
+          width="52"
+          height="52"
+          aria-hidden="true"
+        />
+      </picture>
+      <h2 class="cs-title">Responsive websites</h2>
+      <p class="cs-text">
+        Responsive web design that works well on all devices, making sure it is
+        mobile & user-friendly to ensure a smooth experience.
+      </p>
+    </li>
+    <li class="cs-item">
+      <picture class="cs-icon">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://img.icons8.com/?size=100&id=38536&format=png&color=000000"
+          alt="icon"
+          width="52"
+          height="52"
+          aria-hidden="true"
+        />
+      </picture>
+      <h2 class="cs-title">Modern Websites</h2>
+      <p class="cs-text">
+        I can create simple, easy to use websites & UI that are visually
+        appealing, fast and easy to use.
+      </p>
+    </li>
+    <li class="cs-item">
+      <picture class="cs-icon">
+        <img
+          loading="lazy"
+          decoding="async"
+          src="https://img.icons8.com/?size=100&id=7695&format=png&color=000000"
+          alt="icon"
+          width="48"
+          height="48"
+          aria-hidden="true"
+        />
+      </picture>
+      <h2 class="cs-title">SEO Optimization</h2>
+      <p class="cs-text">
+        I can optimize your content and web structure, ensuring your website
+        ranks higher in Google search to improve website traffic.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<style>
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+  @font-face {
+    font-family: 'BDOGrotesk';
+    src: url('../../public/fonts/BDOGrotesk-VF.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #h-services-143 {
+      /* 40px - 100px */
+      padding: 0 1em 1rem 1rem;
+      position: relative;
+      /* give a higher z index than the hero so it can sit on top */
+      z-index: 10;
+    }
+    #h-services-143 .cs-card-group {
+      width: 100%;
+      max-width: 29.0625rem;
+      margin: 0 auto 0;
+      /* negative margin pulls it up on top of the hero section */
+      /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
+            to make the value negative since clamp doesn't work with negative values */
+      margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+      /* 40px - 60px top and bottom, 16px - 44px left & right */
+      padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 0.3125rem;
+      /* border-top: 8px solid; */
+      background-color: #fff;
+      position: relative;
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+    }
+    /* ALLOWS GRADIENT AS A BORDER TOP  */
+    #h-services-143 .cs-card-group::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: linear-gradient(
+        90deg,
+        rgba(231, 91, 78, 1) 0%,
+        rgba(255, 111, 97, 1) 100%
+      );
+    }
+    #h-services-143 .cs-item {
+      list-style: none;
+      margin: 0 auto 2rem;
+      width: 100%;
+      max-width: 22.5rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+      margin-bottom: 0;
+    }
+    #h-services-143 .cs-icon {
+      /* 68px - 88px */
+      width: clamp(4.25rem, 8.8vw, 5.5rem);
+      /* 68px - 88px */
+      height: clamp(4.25rem, 8.8vw, 5.5rem);
+      margin: auto;
+      /* 20px - 24px */
+      margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+      background: rgb(255, 111, 97);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 111, 97, 1) 5%,
+        rgba(231, 91, 78, 1) 91%
+      );
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #h-services-143 .cs-icon img {
+      /* 44px - 52px */
+      width: clamp(2.75rem, 5.8vw, 3.25rem);
+      height: auto;
+    }
+    #h-services-143 .cs-title {
+      font-size: 1.25rem;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0 auto 0.5rem;
+      color: var(--secondary);
+    }
+    #h-services-143 .cs-text {
+      font-size: 1rem;
+      text-align: center;
+      line-height: 1.5em;
+      max-width: 22.5rem;
+      margin: 0 auto;
+      color: var(--bodyTextColor);
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #h-services-143 .cs-card-group {
+      max-width: 49rem;
+      /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
+               to make the value negative since clamp doesn't work with negative values */
+      margin-top: calc(clamp(4.75rem, 20vw, 20rem) * -1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 2.5rem;
+    }
+    #h-services-143 .cs-item {
+      width: 45%;
+      max-width: 19.625rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+  /* Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #h-services-143 .cs-card-group {
+      max-width: 80rem;
+      flex-wrap: nowrap;
+    }
+    #h-services-143 .cs-item {
+      margin: 0;
+    }
+    #h-services-143 .cs-item:last-of-type {
+      margin-bottom: 0;
+    }
+
+    #h-services-143 .cs-icon:hover {
+      transform: scale(1.1);
+      transition: all 0.5s;
+      transition-property: all;
+      transition-property: transform;
+      transition-timing-function: ease-in;
+    }
+  }
+</style>
