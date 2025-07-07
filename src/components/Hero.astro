@@ -15,16 +15,20 @@
       provide WordPress development and SEO optimization services to enhance
       your site's visibility and drive traffic to your site.
     </p>
-    <a href="mailto:jason.req@gmail.com" class="cs-button-solid"
+    <a
+      href="mailto:jason.req@gmail.com"
+      class="cs-button-solid cs-button-google"
       ><i class="fab fa-google"></i>mail</a
     >
     <a
       href="https://au.linkedin.com/in/jason-requizo-b362a8124"
-      class="cs-button-solid"
+      class="cs-button-solid cs-button-linkedin"
       target="_blank">Linked<i class="fab fa-linkedin-in"></i></a
     >
-    <a href="https://github.com/jquizo" class="cs-button-solid" target="_blank"
-      ><i class="fab fa-github"></i> Github</a
+    <a
+      href="https://github.com/jquizo"
+      class="cs-button-solid cs-button-github"
+      target="_blank"><i class="fab fa-github"></i> Github</a
     >
   </div>
   <span class="cs-header">Technologies:</span>
@@ -255,7 +259,7 @@
       margin-bottom: clamp(2.5rem, 4vw, 3rem);
     }
     #hero-143 .cs-button-solid {
-      font-size: 1rem;
+      font-size: 1.1rem;
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
       text-decoration: none;
@@ -264,12 +268,12 @@
       color: #000000;
       min-width: 6.375rem;
       padding: 0 1.5rem;
-      background: rgb(231, 91, 78);
+      /* background: rgb(231, 91, 78);
       background: linear-gradient(
         90deg,
         rgba(231, 91, 78, 1) 0%,
         rgba(255, 111, 97, 1) 100%
-      );
+      ); */
       border-radius: 4px;
       border: 1.5px solid black;
       display: inline-block;
@@ -293,12 +297,41 @@
       z-index: -1;
       transition: width 0.8s;
     }
-    #hero-143 .cs-button-solid:hover:before {
-      width: 100%;
-      background-color: #000000;
+
+    #hero-143 .cs-button-google {
+      background: rgb(255, 167, 0);
     }
-    #hero-143 .cs-button-solid:hover {
+
+    #hero-143 .cs-button-google:hover:before {
+      width: 100%;
+      background-color: rgb(0, 135, 68);
+    }
+    #hero-143 .cs-button-google:hover {
+    }
+
+    #hero-143 .cs-button-linkedin {
+      background: rgb(0, 119, 181);
+    }
+
+    #hero-143 .cs-button-linkedin:hover:before {
+      width: 100%;
+      background-color: rgb(0, 95, 146);
+    }
+    #hero-143 .cs-button-linkedin:hover {
       color: #fff;
+    }
+
+    #hero-143 .cs-button-github {
+      color: white;
+      background: rgb(0, 0, 0);
+    }
+
+    #hero-143 .cs-button-github:hover:before {
+      width: 100%;
+      background-color: #ffffff;
+    }
+    #hero-143 .cs-button-github:hover {
+      color: #000000;
     }
   }
   /* Desktop - 1300px (To make image background parallax) */
